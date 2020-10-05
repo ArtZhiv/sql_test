@@ -45,7 +45,7 @@ func Search() {
 	var nummmm int
 	fmt.Scan(&nummmm)
 
-	rows, err := db.Query("select * from beCloud_database.eNodeB where number = ?", nummmm)
+	rows, err := db.Query("select * from beCloud_database.eNodeB where number like ?", nummmm)
 	if err != nil {
 		panic(err)
 	}
@@ -76,10 +76,10 @@ func Search() {
 			} else {
 				fmt.Println(p.number, p.address)
 				fmt.Println("\t", p.region, ", ", p.address)
-				fmt.Println("\t Vendor: ", p.vendor, "На площадке: ", p.place)
+				fmt.Println("\t Vendor: ", p.vendor, "\n\t На площадке: ", p.place)
 				fmt.Println()
 
-				rows, err := db.Query("select * from beCloud_database.sector where number = ?", nummmm)
+				rows, err := db.Query("select * from beCloud_database.sector where number = ?", p.number)
 				if err != nil {
 					panic(err)
 				}
