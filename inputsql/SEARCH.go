@@ -4,6 +4,7 @@ import (
 	"database/sql"
 	"fmt"
 	"strings"
+	"time"
 )
 
 type enb struct {
@@ -27,6 +28,10 @@ type sec struct {
 	a1      bool
 	beCloud bool
 }
+
+const (
+	layoutISO = "02-01-2006"
+)
 
 // Search ...
 func Search() {
@@ -57,11 +62,16 @@ func Search() {
 		products = append(products, p)
 	}
 	if len(products) == 0 {
-		fmt.Println(nummmm, "не в коммерции")
+		dt := time.Now()
+		d := dt.Format("01.02.2006")
+		fmt.Println(nummmm, "не в коммерции на", d)
 	} else {
 		for _, p := range products {
 			if p.demolition != "___" {
-				fmt.Println("ДЕМОНТИРОВАНА--|--", p.number, "--|--", p.demolition, "--|")
+				len := len(p.demolition) - 4
+				fmt.Println("+ -------------- + ---------- +", strings.Repeat("-", len), "+")
+				fmt.Println("| ДЕМОНТИРОВАНА--|--", p.number, "--|--", p.demolition, "--|")
+				fmt.Println("+ -------------- + ---------- +", strings.Repeat("-", len), "+")
 				fmt.Println()
 			} else {
 				fmt.Println(p.number, p.address)
@@ -122,7 +132,9 @@ func Search() {
 				a := strings.Repeat("-", len(nA1)+2)
 				b := strings.Repeat("-", len(nBecloud)+2)
 				fmt.Println("\t  + ----------- + ----------- +", m, "+", a, "+", l, "+", b, "+")
+				fmt.Println()
 			}
 		}
 	}
+
 }

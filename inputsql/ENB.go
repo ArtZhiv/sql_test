@@ -6,6 +6,7 @@ import (
 	"strconv"
 
 	"github.com/360EntSecGroup-Skylar/excelize"
+	// "github.com/360EntSecGroup-Skylar/excelize/v2"
 )
 
 // InputENB ...
@@ -25,7 +26,7 @@ func InputENB() {
 		fmt.Println("Table eNodeB is CLEARED!!!", del)
 	}
 
-	f, err := excelize.OpenFile("Commercial BS.xlsm")
+	f, err := excelize.OpenFile("//192.168.37.222/24x7/Макросы и шаблоны/Комерция для шаблонов и макросов/Commercial BS.xlsm")
 	if err != nil {
 		fmt.Println(err)
 		return
