@@ -1,6 +1,6 @@
 # sql_test
 
-'''
+``` sql
 CREATE TABLE eNodeB (
     E_id       INT AUTO_INCREMENT,
     number     INT NOT NULL,
@@ -24,4 +24,4 @@ CREATE TABLE sector (
     beCloud    BOOLEAN,
     PRIMARY KEY(S_id)
 );
-'''
+```
