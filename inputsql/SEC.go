@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/360EntSecGroup-Skylar/excelize"
-	// "github.com/360EntSecGroup-Skylar/excelize/v2"
+	// "github.com/360EntSecGroup-Skylar/excelize"
+	"github.com/360EntSecGroup-Skylar/excelize/v2"
 )
 
 // InputSEC ...
@@ -34,20 +34,20 @@ func InputSEC() {
 
 	// Get value from cell by given worksheet name and axis.
 	sectList := f.GetSheetName(1)
-	rowsSect := f.GetRows(sectList)
+	rowsSect, _ := f.GetRows(sectList)
 	var s int
 	for rowSect := range rowsSect {
 		s = rowSect
 	}
 	for i := 2; i <= s+1; i++ {
 		// sector
-		sNumber := f.GetCellValue(sectList, "A"+strconv.Itoa(i))
-		sector := f.GetCellValue(sectList, "B"+strconv.Itoa(i))
-		sBand := f.GetCellValue(sectList, "C"+strconv.Itoa(i))
-		sMts := f.GetCellValue(sectList, "E"+strconv.Itoa(i))
-		sLife := f.GetCellValue(sectList, "F"+strconv.Itoa(i))
-		sA1 := f.GetCellValue(sectList, "G"+strconv.Itoa(i))
-		sBecloud := f.GetCellValue(sectList, "H"+strconv.Itoa(i))
+		sNumber, _ := f.GetCellValue(sectList, "A"+strconv.Itoa(i))
+		sector, _ := f.GetCellValue(sectList, "B"+strconv.Itoa(i))
+		sBand, _ := f.GetCellValue(sectList, "C"+strconv.Itoa(i))
+		sMts, _ := f.GetCellValue(sectList, "E"+strconv.Itoa(i))
+		sLife, _ := f.GetCellValue(sectList, "F"+strconv.Itoa(i))
+		sA1, _ := f.GetCellValue(sectList, "G"+strconv.Itoa(i))
+		sBecloud, _ := f.GetCellValue(sectList, "H"+strconv.Itoa(i))
 		//
 		var mts, life, a1, becloud bool
 		ssBand, _ := strconv.Atoi(sBand)
