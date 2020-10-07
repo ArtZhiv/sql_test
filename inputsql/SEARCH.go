@@ -44,6 +44,7 @@ func Search() {
 
 	var nummmm int
 	fmt.Scan(&nummmm)
+	fmt.Println()
 
 	rows, err := db.Query("select * from beCloud_database.eNodeB where number like ?", nummmm)
 	if err != nil {
@@ -75,6 +76,7 @@ func Search() {
 				fmt.Println()
 			} else {
 				fmt.Println(p.number, p.address)
+				fmt.Println()
 				fmt.Println("\t", p.region, ", ", p.address)
 				fmt.Println("\t Vendor: ", p.vendor, "\n\t На площадке: ", p.place)
 				fmt.Println()

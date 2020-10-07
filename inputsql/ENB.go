@@ -35,22 +35,22 @@ func InputENB() {
 	// Get value from cell by given worksheet name and axis.
 	enbList := f.GetSheetName(0)
 	fmt.Println(enbList)
-	rowsEnb, _ := f.GetRows(enbList)
+	rowsEnb := f.GetRows(enbList)
 	var e int
 	for rowEnb := range rowsEnb {
 		e = rowEnb
 	}
 
 	for i := 2; i <= e; i++ {
-		dem, _ := f.GetCellValue(enbList, "M"+strconv.Itoa(i))
-		number, _ := f.GetCellValue(enbList, "A"+strconv.Itoa(i))
+		dem := f.GetCellValue(enbList, "M"+strconv.Itoa(i))
+		number := f.GetCellValue(enbList, "A"+strconv.Itoa(i))
 		// address
-		region, _ := f.GetCellValue(enbList, "G"+strconv.Itoa(i))
-		city, _ := f.GetCellValue(enbList, "F"+strconv.Itoa(i))
-		fAdr, _ := f.GetCellValue(enbList, "B"+strconv.Itoa(i))
+		region := f.GetCellValue(enbList, "G"+strconv.Itoa(i))
+		city := f.GetCellValue(enbList, "F"+strconv.Itoa(i))
+		fAdr := f.GetCellValue(enbList, "B"+strconv.Itoa(i))
 		//
-		vendor, _ := f.GetCellValue(enbList, "D"+strconv.Itoa(i))
-		operator, _ := f.GetCellValue(enbList, "U"+strconv.Itoa(i))
+		vendor := f.GetCellValue(enbList, "D"+strconv.Itoa(i))
+		operator := f.GetCellValue(enbList, "U"+strconv.Itoa(i))
 
 		if err != nil {
 			fmt.Println(err.Error())

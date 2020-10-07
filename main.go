@@ -5,7 +5,7 @@ import (
 	"os"
 	"os/exec"
 
-	"./inputsql"
+	"github.com/ArtZhiv/sql_test/inputsql"
 
 	_ "github.com/go-sql-driver/mysql"
 )
