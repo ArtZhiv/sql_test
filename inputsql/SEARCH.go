@@ -42,11 +42,11 @@ func Search() {
 	}
 	defer db.Close()
 
-	var nummmm int
+	var nummmm string
 	fmt.Scan(&nummmm)
 	fmt.Println()
 
-	rows, err := db.Query("select * from beCloud_database.eNodeB where number like ?", nummmm)
+	rows, err := db.Query("SELECT * FROM beCloud_database.eNodeB WHERE number LIKE concat('%',?,'%')", nummmm)
 	if err != nil {
 		panic(err)
 	}

@@ -21,18 +21,13 @@ type enb2 struct {
 }
 
 // Convert ...
-func Convert(val string) {
-	a, _ := strconv.Atoi(val)
-	b := a % 100
-	bb := strconv.Itoa(b)
-
-	i, _ := strconv.ParseInt(bb, 16, 64)
+func Convert(a int) {
+	b := strconv.Itoa(a % 100)
+	i, _ := strconv.ParseInt(b, 16, 64)
 	m := strconv.FormatInt(i, 10)
 
-	c := (a / 100) % 100000
-	cc := strconv.Itoa(c)
-
-	ii, _ := strconv.ParseInt(cc, 16, 64)
+	c := strconv.Itoa((a / 100) % 100000)
+	ii, _ := strconv.ParseInt(c, 16, 64)
 	mm := strconv.FormatInt(ii, 10)
 
 	db, err := sql.Open("mysql", "Artem:Artem$mena@tcp(192.168.37.64:3306)/beCloud_database")
@@ -41,7 +36,7 @@ func Convert(val string) {
 	}
 	defer db.Close()
 
-	rows, err := db.Query("select * from beCloud_database.eNodeB where number like ?", mm)
+	rows, err := db.Query("SELECT * FROM beCloud_database.eNodeB WHERE number LIKE concat('%',?,'%')", mm)
 	if err != nil {
 		panic(err)
 	}

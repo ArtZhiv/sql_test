@@ -26,7 +26,7 @@ func main() {
 		fmt.Print("Введите номер eNodeB: ")
 		inputsql.Search()
 	case vvod == 4:
-		var inp string
+		var inp int
 		fmt.Print("Введите значение из запроса: ")
 		fmt.Scan(&inp)
 		fmt.Println()
