@@ -5,6 +5,7 @@ import (
 
 	"github.com/ArtZhiv/sql_test/cmd"
 	"github.com/ArtZhiv/sql_test/inputsql"
+	"github.com/ArtZhiv/sql_test/test"
 
 	_ "github.com/go-sql-driver/mysql"
 )
@@ -34,5 +35,8 @@ func main() {
 	case vvod == 5:
 		fmt.Print("Введите список eNodeB: ")
 		inputsql.SearchMTS()
+	case vvod == 666:
+		fmt.Println("Здесь запускаются тестовые функции")
+		test.Test()
 	}
 }
