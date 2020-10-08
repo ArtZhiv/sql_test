@@ -5,6 +5,8 @@ import (
 	"fmt"
 	"strings"
 	"time"
+
+	"github.com/ArtZhiv/sql_test/cmd"
 )
 
 type enb struct {
@@ -38,7 +40,6 @@ func Search() {
 	}
 	defer db.Close()
 
-	// var nummmm string
 	var nummmm []string
 	var a string
 	for {
@@ -49,7 +50,8 @@ func Search() {
 			nummmm = append(nummmm, a)
 		}
 	}
-	// cmd.ClearCMD()
+	fmt.Println()
+
 	for _, elem := range nummmm {
 		rows, err := db.Query("SELECT * FROM beCloud_database.eNodeB WHERE number LIKE concat('%',?,'%')", elem)
 		if err != nil {
@@ -153,7 +155,8 @@ func SearchMTS() {
 	}
 	defer db.Close()
 
-	// var nummmm string
+	cmd.ClearCMD()
+
 	var nummmm []string
 	var a string
 	for {
@@ -200,4 +203,5 @@ func SearchMTS() {
 			}
 		}
 	}
+	fmt.Println()
 }

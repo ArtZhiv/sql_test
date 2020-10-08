@@ -22,6 +22,7 @@ func main() {
 	case vvod == 2:
 		inputsql.InputSEC()
 	case vvod == 3:
+		cmd.ClearCMD()
 		fmt.Print("Введите номер eNodeB: ")
 		inputsql.Search()
 	case vvod == 4:
