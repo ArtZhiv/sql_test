@@ -13,7 +13,7 @@ func main() {
 	cmd.ClearCMD()
 
 	var vvod int
-	fmt.Print("Введите цифру требуемого действия:\n\t1-обновление eNB;\n\t2-обновление секторов;\n\t3-вывод информации о eNB;\n\t4-Перевод для UNET (из HEX в DEC)\n_:  ")
+	fmt.Print("Введите цифру требуемого действия:\n\t1-обновление eNB;\n\t2-обновление секторов;\n\t3-вывод информации о eNB;\n\t4-Перевод для UNET (из HEX в DEC);\n\t5-РРЛ для СООО <<МТС>>\n_:  ")
 	fmt.Scan(&vvod)
 	fmt.Println()
 	switch {
@@ -30,5 +30,8 @@ func main() {
 		fmt.Scan(&inp)
 		fmt.Println()
 		inputsql.Convert(inp)
+	case vvod == 5:
+		fmt.Print("Введите список eNodeB: ")
+		inputsql.SearchMTS()
 	}
 }

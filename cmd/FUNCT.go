@@ -18,3 +18,9 @@ func StartProgramm() {
 	cmd.Stdout = os.Stdout
 	cmd.Run()
 }
+
+/*
+	cmd := exec.Command("powershell", "/c", "echo", c)
+	cmd.Stdout = os.Stdout
+	cmd.Run()
+*/
