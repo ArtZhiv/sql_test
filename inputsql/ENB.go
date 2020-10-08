@@ -7,6 +7,7 @@ import (
 
 	// "github.com/360EntSecGroup-Skylar/excelize"
 	"github.com/360EntSecGroup-Skylar/excelize/v2"
+	"github.com/ArtZhiv/sql_test/cmd"
 )
 
 // InputENB ...
@@ -75,4 +76,5 @@ func InputENB() {
 			fmt.Println(result.LastInsertId())
 		}
 	}
+	cmd.StartProgramm()
 }

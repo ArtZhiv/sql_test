@@ -5,6 +5,8 @@ import (
 	"fmt"
 	"strings"
 	"time"
+
+	"github.com/ArtZhiv/sql_test/cmd"
 )
 
 type enb struct {
@@ -45,6 +47,8 @@ func Search() {
 	var nummmm string
 	fmt.Scan(&nummmm)
 	fmt.Println()
+
+	cmd.ClearCMD()
 
 	rows, err := db.Query("SELECT * FROM beCloud_database.eNodeB WHERE number LIKE concat('%',?,'%')", nummmm)
 	if err != nil {

@@ -21,14 +21,16 @@ type enb2 struct {
 }
 
 // Convert ...
-func Convert(a int) {
-	b := strconv.Itoa(a % 100)
-	i, _ := strconv.ParseInt(b, 16, 64)
-	m := strconv.FormatInt(i, 10)
-
-	c := strconv.Itoa((a / 100) % 100000)
+func Convert(a string) {
+	// Перевод для номера eNodeB
+	c := a[5:10]
 	ii, _ := strconv.ParseInt(c, 16, 64)
 	mm := strconv.FormatInt(ii, 10)
+
+	// Перевод для сектора eNodeB
+	b := a[10:]
+	i, _ := strconv.ParseInt(b, 16, 64)
+	m := strconv.FormatInt(i, 10)
 
 	db, err := sql.Open("mysql", "Artem:Artem$mena@tcp(192.168.37.64:3306)/beCloud_database")
 	if err != nil {
@@ -65,7 +67,7 @@ func Convert(a int) {
 				fmt.Println("+ -------------- + ---------- +", strings.Repeat("-", len), "+")
 				fmt.Println()
 			} else {
-				fmt.Println("Коллеги, данный клиент подключен к", m, "сектору на eNodeB", p.number, p.address)
+				fmt.Println("Коллеги, данный клиент подключен к", m, "сектору eNodeB", p.number, p.address)
 				fmt.Println()
 			}
 		}
