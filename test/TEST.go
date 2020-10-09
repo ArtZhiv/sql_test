@@ -2,6 +2,9 @@ package test
 
 import (
 	"fmt"
+	"io"
+	"os"
+	"strings"
 )
 
 // Test ...
@@ -15,22 +18,30 @@ func Test() {
 	// cmd.Stdout = os.Stdout
 	// cmd.Run()
 
-	// file, err := os.Open("test.txt")
-	// if err != nil {
-	// 	panic(err)
-	// 	os.Exit(1)
-	// }
-	// defer file.Close()
+	file, err := os.Open("test.txt")
+	if err != nil {
+		panic(err)
+		os.Exit(1)
+	}
+	defer file.Close()
 
-	// data := make([]byte, 1024)
-	// var n int
-	// // var nummmm []string
+	data := make([]byte, 1024)
+	var n int
+	// var nummmm []string
 
-	// for {
-	// 	n, err = file.Read(data)
-	// 	if err == io.EOF {
-	// 		break
-	// 	}
+	for {
+		n, err = file.Read(data)
+		if err == io.EOF {
+			break
+		}
+		vvv := string(data[:n])
+		fmt.Println()
+		fmt.Println(vvv)
+		w := strings.Split(vvv, ", ")
+		for _, elem := range w {
+			fmt.Println("e:", elem)
+		}
+	}
 	// 	fmt.Println(n)
 	// 	fmt.Println(string(data[6:10]))
 	// 	vvv := string(data[:n])
@@ -61,29 +72,4 @@ func Test() {
 	// 	fmt.Println("String", a)
 	// 	break
 	// }
-
-	// var a string
-	// fmt.Scanln(&a)
-	// if a == "" {
-	// 	fmt.Println("Enter")
-	// } else {
-	// 	fmt.Println("Error")
-	// }
-	for i := 1; i < 7; i++ {
-		go factorial(i)
-	}
-	fmt.Scanln()
-	fmt.Println("The End")
-}
-
-func factorial(n int) {
-	if n < 1 {
-		fmt.Println("Invalid input number")
-		return
-	}
-	result := 1
-	for i := 1; i <= n; i++ {
-		result *= i
-	}
-	fmt.Println(n, "-", result)
 }
