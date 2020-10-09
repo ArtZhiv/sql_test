@@ -42,34 +42,4 @@ func Test() {
 			fmt.Println("e:", elem)
 		}
 	}
-	// 	fmt.Println(n)
-	// 	fmt.Println(string(data[6:10]))
-	// 	vvv := string(data[:n])
-	// 	fmt.Println()
-	// 	fmt.Println(vvv)
-
-	// 	for _, elem := range vvv {
-	// 		fmt.Println("ELEM:", elem)
-	// 	}
-	// }
-
-	// for {
-	// 	fmt.Scan(&a)
-	// 	if a == "*" {
-	// 		break
-	// 	} else {
-	// 		nummmm = append(nummmm, a)
-	// 	}
-	// }
-	// fmt.Println(len(nummmm))
-	// for idx, elem := range nummmm {
-	// 	fmt.Println("IDX:", idx, "ELEM:", elem)
-	// }
-
-	// if strings.Contains(a, "*") {
-	// 	fmt.Println("Massive")
-	// } else {
-	// 	fmt.Println("String", a)
-	// 	break
-	// }
 }
