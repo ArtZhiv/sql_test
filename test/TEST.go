@@ -36,7 +36,7 @@ func Test() {
 		}
 		vvv := string(data[:n])
 		fmt.Println()
-		fmt.Println(vvv)
+		// fmt.Println(vvv)
 		w := strings.Split(vvv, ", ")
 		for _, elem := range w {
 			fmt.Println("e:", elem)
