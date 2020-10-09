@@ -11,10 +11,8 @@ import (
 )
 
 func main() {
-	cmd.ClearCMD()
-
 	var vvod int
-	fmt.Print("Введите цифру требуемого действия:\n\t1-обновление eNB;\n\t2-обновление секторов;\n\t3-вывод информации о eNB;\n\t4-Перевод для UNET (из HEX в DEC);\n\t5-РРЛ для СООО <<МТС>>\n_:  ")
+	cmd.Info1()
 	fmt.Scan(&vvod)
 	fmt.Println()
 	switch {
@@ -24,12 +22,12 @@ func main() {
 		inputsql.InputSEC()
 	case vvod == 3:
 		cmd.ClearCMD()
-		fmt.Print("\tномер eNodeB если требуется найти только одну станцию\n\t*-для ввода станций списком\n\tг-город\n\tо-область\n\tд-демонтированные\nВведите: ")
+		cmd.InfoSearchENB()
+
 		var a string
 		fmt.Scan(&a)
 		switch {
 		case a == "*":
-			fmt.Print("Введите список eNodeB: ")
 			inputsql.SearchList()
 		case a == "г":
 			var nummmm string

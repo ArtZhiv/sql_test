@@ -143,6 +143,11 @@ func SearchList() {
 	}
 	defer db.Close()
 
+	fmt.Println()
+	fmt.Println("Все номера БС вносятся через пробел, когда ввели все номера ставим * и жмём ENTER")
+	fmt.Println()
+	fmt.Print("Введите список eNodeB: ")
+
 	var nummmm []string
 	var a string
 	for {
