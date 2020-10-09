@@ -345,6 +345,40 @@ func SearchCity(nummmm string) {
 	}
 }
 
+// SearchDel ...
+func SearchDel() {
+	db, err := sql.Open("mysql", "Artem:Artem$mena@tcp(192.168.37.64:3306)/beCloud_database")
+
+	if err != nil {
+		panic(err)
+	}
+	defer db.Close()
+	fmt.Println()
+
+	rows, err := db.Query("SELECT * FROM beCloud_database.eNodeB")
+	if err != nil {
+		panic(err)
+	}
+	defer rows.Close()
+	products := []enb{}
+
+	for rows.Next() {
+		p := enb{}
+		err := rows.Scan(&p.id, &p.number, &p.address, &p.vendor, &p.region, &p.province, &p.demolition, &p.place)
+		if err != nil {
+			fmt.Println(err)
+			continue
+		}
+		products = append(products, p)
+	}
+	for _, p := range products {
+		if p.demolition != "___" {
+			fmt.Println("| ДЕМОНТИРОВАНА--|--", p.number, "--|--", p.demolition, "--|")
+		}
+	}
+	fmt.Println()
+}
+
 // SearchMTS ...
 func SearchMTS() {
 	db, err := sql.Open("mysql", "Artem:Artem$mena@tcp(192.168.37.64:3306)/beCloud_database")
@@ -355,6 +389,7 @@ func SearchMTS() {
 	defer db.Close()
 
 	cmd.ClearCMD()
+	fmt.Print("Введите список eNodeB: ")
 
 	var nummmm []string
 	var a string
@@ -366,7 +401,8 @@ func SearchMTS() {
 			nummmm = append(nummmm, a)
 		}
 	}
-	// cmd.ClearCMD()
+	fmt.Println()
+
 	for _, elem := range nummmm {
 		rows, err := db.Query("SELECT * FROM beCloud_database.eNodeB WHERE number LIKE concat('%',?,'%')", elem)
 		if err != nil {
