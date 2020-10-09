@@ -24,8 +24,27 @@ func main() {
 		inputsql.InputSEC()
 	case vvod == 3:
 		cmd.ClearCMD()
-		fmt.Print("Введите номер eNodeB: ")
-		inputsql.Search()
+		fmt.Print("\tномер eNodeB если требуется найти только одну станцию\n\t*-для ввода станций списком\n\tг-город\n\tо-область\nВведите: ")
+		var a string
+		fmt.Scan(&a)
+		switch {
+		case a == "*":
+			fmt.Print("Введите список eNodeB: ")
+			inputsql.SearchList()
+		case a == "г":
+			var nummmm string
+			fmt.Print("Введите город: ")
+			fmt.Scan(&nummmm)
+			inputsql.SearchCity(nummmm)
+		case a == "о":
+			var nummmm string
+			fmt.Print("Введите область: ")
+			fmt.Scan(&nummmm)
+			inputsql.SearchRegion(nummmm)
+		default:
+			inputsql.Search(a)
+		}
+		// fmt.Print("Введите номер eNodeB: ")
 	case vvod == 4:
 		var inp string
 		fmt.Print("Введите значение из запроса: ")
