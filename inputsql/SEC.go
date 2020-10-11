@@ -37,6 +37,7 @@ func InputSEC() {
 	sectList := f.GetSheetName(1)
 	rowsSect, _ := f.GetRows(sectList)
 	var s int
+	var count int64
 	for rowSect := range rowsSect {
 		s = rowSect
 	}
@@ -86,7 +87,11 @@ func InputSEC() {
 			panic(err)
 		}
 
-		fmt.Println(result.LastInsertId())
+		count, err = result.LastInsertId()
+		if err != nil {
+			panic(err)
+		}
 	}
-	cmd.StartProgramm()
+	cmd.ClearCMD()
+	fmt.Println("Добавлено: ", count)
 }

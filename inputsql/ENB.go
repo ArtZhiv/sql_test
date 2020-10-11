@@ -40,6 +40,7 @@ func InputENB() {
 	for rowEnb := range rowsEnb {
 		e = rowEnb
 	}
+	var count int64
 	for i := 2; i <= e; i++ {
 		dem, _ := f.GetCellValue(enbList, "M"+strconv.Itoa(i))
 		number, _ := f.GetCellValue(enbList, "A"+strconv.Itoa(i))
@@ -63,7 +64,7 @@ func InputENB() {
 			if err != nil {
 				panic(err)
 			}
-			fmt.Println(result.LastInsertId())
+			result.LastInsertId()
 		} else {
 			number, _ := strconv.Atoi(number)
 			result, err := db.Exec("INSERT INTO beCloud_database.eNodeB (number, address, vendor, region, province, demolition, place) values (?, ?, ?, ?, ?, ?, ?)",
@@ -71,8 +72,12 @@ func InputENB() {
 			if err != nil {
 				panic(err)
 			}
-			fmt.Println(result.LastInsertId())
+			count, err = result.LastInsertId()
+			if err != nil {
+				panic(err)
+			}
 		}
 	}
-	cmd.StartProgramm()
+	cmd.ClearCMD()
+	fmt.Println("Добавлено: ", count)
 }
