@@ -408,36 +408,30 @@ func SearchMTS() {
 	fmt.Println()
 
 	for _, elem := range nummmm {
-		rows, err := db.Query("SELECT * FROM beCloud_database.eNodeB WHERE number LIKE concat('%',?,'%')", elem)
-		if err != nil {
-			panic(err)
-		}
-		defer rows.Close()
-		products := []enb{}
-
-		for rows.Next() {
-			p := enb{}
-			err := rows.Scan(&p.id, &p.number, &p.address, &p.vendor, &p.region, &p.province, &p.demolition, &p.place)
-			if err != nil {
-				fmt.Println(err)
-				continue
+		if strings.Contains(elem, "(LTE),") {
+			if len(elem) == 10 {
+				a := "0" + elem[:4]
+				FindMTSforText(a)
+				// fmt.Println("elem__:", a)
+			} else {
+				a := "00" + elem[:3]
+				FindMTSforText(a)
+				// fmt.Println("elem__:", a)
 			}
-			products = append(products, p)
-		}
-		if len(products) == 0 {
-			dt := time.Now()
-			d := dt.Format("02.01.2006")
-			fmt.Println("на", d, "eNodeB", elem, "не в коммерции")
+		} else if strings.Contains(elem, "(UMTS)") || strings.Contains(elem, "(IP)") || strings.Contains(elem, "(FTTX)") {
+			continue
 		} else {
-			for _, p := range products {
-				if p.demolition != "___" {
-					fmt.Println("+ -------------- + ---------- +")
-					fmt.Println("| ДЕМОНТИРОВАНА--|--", p.number, "--|--", p.demolition, "--|")
-					fmt.Println("+ -------------- + ---------- +")
-					fmt.Println()
-				} else {
-					fmt.Println(p.number, p.address)
-				}
+			if len(elem) == 4 {
+				a := "0" + elem
+				// fmt.Println(a)
+				FindMTSforText(a)
+			} else if len(elem) == 3 {
+				a := "00" + elem
+				// fmt.Println(a)
+				FindMTSforText(a)
+			} else {
+				// fmt.Println(elem)
+				FindMTSforText(elem)
 			}
 		}
 	}
@@ -447,6 +441,16 @@ func SearchMTS() {
 // TextSearchMTS ...
 func TextSearchMTS() {
 	fmt.Println()
+	path := "files/workMts.txt"
+
+	fileCreate, err := os.Create(path)
+	if err != nil {
+		panic(err)
+		os.Exit(1)
+	} else {
+		fileCreate.Close()
+	}
+
 	fmt.Println("Сейчас откроется текстовый файл вставьте то что прислал МТС и сохраните файл и нажмите ENTER")
 	cmd := exec.Command("powershell", "/c", "./files/workMts.txt")
 	cmd.Stdout = os.Stdout
@@ -454,12 +458,11 @@ func TextSearchMTS() {
 	fmt.Scanln()
 	fmt.Scanln()
 
-	file, err := os.Open("files/workMts.txt")
+	file, err := os.Open(path)
 	if err != nil {
 		panic(err)
 		os.Exit(1)
 	}
-	defer file.Close()
 
 	data := make([]byte, 1024)
 	var n int
@@ -486,7 +489,10 @@ func TextSearchMTS() {
 			}
 		}
 	}
+	file.Close()
 	fmt.Println()
+
+	os.Remove(path)
 }
 
 // FindMTSforText ...
