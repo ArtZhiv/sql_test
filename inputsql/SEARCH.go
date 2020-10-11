@@ -408,29 +408,34 @@ func SearchMTS() {
 	fmt.Println()
 
 	for _, elem := range nummmm {
-		if strings.Contains(elem, "(LTE),") {
-			if len(elem) == 10 {
+		if strings.Contains(elem, "LTE") {
+			if (strings.Contains(elem, "(LTE),") || strings.Contains(elem, "(LTE).")) && len(elem) == 10 {
 				a := "0" + elem[:4]
 				FindMTSforText(a)
-				// fmt.Println("elem__:", a)
-			} else {
+			} else if (strings.Contains(elem, "(LTE),") || strings.Contains(elem, "(LTE).")) && len(elem) == 9 {
 				a := "00" + elem[:3]
 				FindMTSforText(a)
-				// fmt.Println("elem__:", a)
+			} else if strings.Contains(elem, "(LTE)") {
+				if len(elem) == 9 {
+					a := "0" + elem[:4]
+					FindMTSforText(a)
+				} else {
+					a := "00" + elem[:3]
+					FindMTSforText(a)
+				}
+			} else {
+				fmt.Println()
 			}
-		} else if strings.Contains(elem, "(UMTS)") || strings.Contains(elem, "(IP)") || strings.Contains(elem, "(FTTX)") {
+		} else if strings.Contains(elem, "UMTS") || strings.Contains(elem, "IP") || strings.Contains(elem, "FTTX") {
 			continue
 		} else {
 			if len(elem) == 4 {
 				a := "0" + elem
-				// fmt.Println(a)
 				FindMTSforText(a)
 			} else if len(elem) == 3 {
 				a := "00" + elem
-				// fmt.Println(a)
 				FindMTSforText(a)
 			} else {
-				// fmt.Println(elem)
 				FindMTSforText(elem)
 			}
 		}
@@ -466,7 +471,6 @@ func TextSearchMTS() {
 
 	data := make([]byte, 1024)
 	var n int
-
 	for {
 		n, err = file.Read(data)
 		if err == io.EOF {
@@ -474,10 +478,10 @@ func TextSearchMTS() {
 		}
 		vvv := string(data[:n])
 		fmt.Println()
-		w := strings.Split(vvv, ", ")
+		w := strings.Split(vvv, " ")
 		for _, elem := range w {
-			if strings.Contains(elem, "(LTE)") {
-				if len(elem) == 9 {
+			if strings.Contains(elem, "LTE") {
+				if len(elem) == 10 {
 					a := "0" + elem[:4]
 					FindMTSforText(a)
 				} else {

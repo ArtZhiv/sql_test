@@ -68,4 +68,7 @@ func main() {
 		fmt.Println()
 		test.Test()
 	}
+	fmt.Print("ENTER для выхода")
+	fmt.Scanln()
+	fmt.Scanln()
 }

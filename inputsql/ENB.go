@@ -35,13 +35,11 @@ func InputENB() {
 
 	// Get value from cell by given worksheet name and axis.
 	enbList := f.GetSheetName(0)
-	fmt.Println(enbList)
 	rowsEnb, _ := f.GetRows(enbList)
 	var e int
 	for rowEnb := range rowsEnb {
 		e = rowEnb
 	}
-
 	for i := 2; i <= e; i++ {
 		dem, _ := f.GetCellValue(enbList, "M"+strconv.Itoa(i))
 		number, _ := f.GetCellValue(enbList, "A"+strconv.Itoa(i))
