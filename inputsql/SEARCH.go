@@ -3,6 +3,9 @@ package inputsql
 import (
 	"database/sql"
 	"fmt"
+	"io"
+	"os"
+	"os/exec"
 	"strings"
 	"time"
 
@@ -65,10 +68,9 @@ func Search(nummmm string) {
 	} else {
 		for _, p := range products {
 			if p.demolition != "___" {
-				len := len(p.demolition) - 4
-				fmt.Println("+ -------------- + ---------- +", strings.Repeat("-", len), "+")
+				fmt.Println("+ -------------- + ---------- +")
 				fmt.Println("| ДЕМОНТИРОВАНА--|--", p.number, "--|--", p.demolition, "--|")
-				fmt.Println("+ -------------- + ---------- +", strings.Repeat("-", len), "+")
+				fmt.Println("+ -------------- + ---------- +")
 				fmt.Println()
 			} else {
 				fmt.Println(p.number, p.address)
@@ -184,10 +186,9 @@ func SearchList() {
 		} else {
 			for _, p := range products {
 				if p.demolition != "___" {
-					len := len(p.demolition) - 4
-					fmt.Println("+ -------------- + ---------- +", strings.Repeat("-", len), "+")
+					fmt.Println("+ -------------- + ---------- +")
 					fmt.Println("| ДЕМОНТИРОВАНА--|--", p.number, "--|--", p.demolition, "--|")
-					fmt.Println("+ -------------- + ---------- +", strings.Repeat("-", len), "+")
+					fmt.Println("+ -------------- + ---------- +")
 					fmt.Println()
 				} else {
 					fmt.Println(p.number, p.address)
@@ -288,10 +289,9 @@ func SearchRegion(nummmm string) {
 	} else {
 		for _, p := range products {
 			if p.demolition != "___" {
-				len := len(p.demolition) - 4
-				fmt.Println("+ -------------- + ---------- +", strings.Repeat("-", len), "+")
+				fmt.Println("+ -------------- + ---------- +")
 				fmt.Println("| ДЕМОНТИРОВАНА--|--", p.number, "--|--", p.demolition, "--|")
-				fmt.Println("+ -------------- + ---------- +", strings.Repeat("-", len), "+")
+				fmt.Println("+ -------------- + ---------- +")
 				fmt.Println()
 			} else {
 				fmt.Println(p.number, p.address)
@@ -334,10 +334,9 @@ func SearchCity(nummmm string) {
 	} else {
 		for _, p := range products {
 			if p.demolition != "___" {
-				len := len(p.demolition) - 4
-				fmt.Println("+ -------------- + ---------- +", strings.Repeat("-", len), "+")
+				fmt.Println("+ -------------- + ---------- +")
 				fmt.Println("| ДЕМОНТИРОВАНА--|--", p.number, "--|--", p.demolition, "--|")
-				fmt.Println("+ -------------- + ---------- +", strings.Repeat("-", len), "+")
+				fmt.Println("+ -------------- + ---------- +")
 				fmt.Println()
 			} else {
 				fmt.Println(p.number, p.address)
@@ -432,10 +431,9 @@ func SearchMTS() {
 		} else {
 			for _, p := range products {
 				if p.demolition != "___" {
-					len := len(p.demolition) - 4
-					fmt.Println("+ -------------- + ---------- +", strings.Repeat("-", len), "+")
+					fmt.Println("+ -------------- + ---------- +")
 					fmt.Println("| ДЕМОНТИРОВАНА--|--", p.number, "--|--", p.demolition, "--|")
-					fmt.Println("+ -------------- + ---------- +", strings.Repeat("-", len), "+")
+					fmt.Println("+ -------------- + ---------- +")
 					fmt.Println()
 				} else {
 					fmt.Println(p.number, p.address)
@@ -444,4 +442,92 @@ func SearchMTS() {
 		}
 	}
 	fmt.Println()
+}
+
+// TextSearchMTS ...
+func TextSearchMTS() {
+	fmt.Println()
+	fmt.Println("Сейчас откроется текстовый файл вставьте то что прислал МТС и сохраните файл и нажмите ENTER")
+	cmd := exec.Command("powershell", "/c", "./files/workMts.txt")
+	cmd.Stdout = os.Stdout
+	cmd.Run()
+	fmt.Scanln()
+	fmt.Scanln()
+
+	file, err := os.Open("files/workMts.txt")
+	if err != nil {
+		panic(err)
+		os.Exit(1)
+	}
+	defer file.Close()
+
+	data := make([]byte, 1024)
+	var n int
+
+	for {
+		n, err = file.Read(data)
+		if err == io.EOF {
+			break
+		}
+		vvv := string(data[:n])
+		fmt.Println()
+		w := strings.Split(vvv, ", ")
+		for _, elem := range w {
+			if strings.Contains(elem, "(LTE)") {
+				if len(elem) == 9 {
+					a := "0" + elem[:4]
+					FindMTSforText(a)
+				} else {
+					a := "00" + elem[:3]
+					FindMTSforText(a)
+				}
+			} else {
+				continue
+			}
+		}
+	}
+	fmt.Println()
+}
+
+// FindMTSforText ...
+func FindMTSforText(elem string) {
+	db, err := sql.Open("mysql", "Artem:Artem$mena@tcp(192.168.37.64:3306)/beCloud_database")
+
+	if err != nil {
+		panic(err)
+	}
+	defer db.Close()
+
+	rows, err := db.Query("SELECT * FROM beCloud_database.eNodeB WHERE number LIKE concat('%',?,'%')", elem)
+	if err != nil {
+		panic(err)
+	}
+	defer rows.Close()
+	products := []enb{}
+
+	for rows.Next() {
+		p := enb{}
+		err := rows.Scan(&p.id, &p.number, &p.address, &p.vendor, &p.region, &p.province, &p.demolition, &p.place)
+		if err != nil {
+			fmt.Println(err)
+			continue
+		}
+		products = append(products, p)
+	}
+	if len(products) == 0 {
+		dt := time.Now()
+		d := dt.Format("02.01.2006")
+		fmt.Println("на", d, "eNodeB", elem, "не в коммерции")
+	} else {
+		for _, p := range products {
+			if p.demolition != "___" {
+				fmt.Println("+ -------------- + ---------- +")
+				fmt.Println("| ДЕМОНТИРОВАНА--|--", p.number, "--|--", p.demolition, "--|")
+				fmt.Println("+ -------------- + ---------- +")
+				fmt.Println()
+			} else {
+				fmt.Println(p.number, p.address)
+			}
+		}
+	}
 }

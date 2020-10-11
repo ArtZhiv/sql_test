@@ -12,6 +12,7 @@ import (
 
 func main() {
 	var vvod int
+	cmd.InfoV()
 	cmd.Info1()
 	fmt.Scan(&vvod)
 	fmt.Println()
@@ -52,9 +53,19 @@ func main() {
 		fmt.Println()
 		inputsql.Convert(inp)
 	case vvod == 5:
-		inputsql.SearchMTS()
+		fmt.Print("1-ввод БС ручками;\n2-ввод через файл TXT;\n_: ")
+		var a int
+		fmt.Scan(&a)
+		switch {
+		case a == 1:
+			inputsql.SearchMTS()
+		case a == 2:
+			inputsql.TextSearchMTS()
+		}
 	case vvod == 666:
-		fmt.Println("Здесь запускаются тестовые функции")
+		fmt.Println("| Здесь запускаются тестовые функции |")
+		fmt.Println("+ ---------------------------------- +")
+		fmt.Println()
 		test.Test()
 	}
 }
