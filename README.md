@@ -24,6 +24,22 @@ CREATE TABLE sector (
     beCloud    BOOLEAN,
     PRIMARY KEY(S_id)
 );
+CREATE TABLE test (
+    t_id       INT AUTO_INCREMENT,
+    address    VARCHAR(400) NOT NULL,
+    fTime      DATETIME NOT NULL,
+    sTime      DATETIME,
+    tTime      TIME,
+    incident   VARCHAR(5),
+    guilty     VARCHAR(10),
+    mts        BOOLEAN,
+    life       BOOLEAN,
+    a1         BOOLEAN,
+    beCloud    BOOLEAN,
+    comment    VARCHAR(400) NOT NULL,
+    crash      VARCHAR(400) NOT NULL,
+    PRIMARY KEY(t_id)
+);
 ```
 ```
 go get github.com/go-sql-driver/mysql
