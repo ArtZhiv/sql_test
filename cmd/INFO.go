@@ -4,7 +4,6 @@ import "fmt"
 
 // InfoV ...
 func InfoV() {
-	ClearCMD()
 	fmt.Println("")
 	fmt.Println("")
 
@@ -29,6 +28,7 @@ func Info1() {
 		"\t3-вывод информации о eNB;",
 		"\t4-Перевод для UNET (из HEX в DEC);",
 		"\t5-РРЛ для СООО <<МТС>>",
+		"\n\t0-для выхода",
 	}
 	for _, elem := range info {
 		fmt.Println(elem)
