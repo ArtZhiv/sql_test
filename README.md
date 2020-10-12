@@ -1,36 +1,14 @@
 # sql_test
 
-``` sql
-CREATE TABLE eNodeB (
-    E_id       INT AUTO_INCREMENT,
-    number     INT NOT NULL,
+```sql
+CREATE TABLE test 
+(
+    id         INT          NOT NULL AUTO_INCREMENT,
     address    VARCHAR(400) NOT NULL,
-	vendor     VARCHAR(10) NOT NULL,
-	region     VARCHAR(50) NOT NULL,
-	province   VARCHAR(50) NOT NULL,
-	demolition VARCHAR(200),
-	erspd      BOOLEAN,
-	place      VARCHAR(10),
-    PRIMARY KEY(E_id)
-);
-CREATE TABLE sector (
-    S_id       INT AUTO_INCREMENT,
-    number     INT NOT NULL,
-    sector     VARCHAR(20) NOT NULL,
-	band       INT NOT NULL,
-	mts        BOOLEAN,
-    life       BOOLEAN,
-    a1         BOOLEAN,
-    beCloud    BOOLEAN,
-    PRIMARY KEY(S_id)
-);
-CREATE TABLE test (
-    t_id       INT AUTO_INCREMENT,
-    address    VARCHAR(400) NOT NULL,
-    fTime      DATETIME NOT NULL,
+    fTime      DATETIME     NOT NULL,
     sTime      DATETIME,
-    tTime      TIME,
-    incident   VARCHAR(5),
+    dTime      TIME,
+    incident   VARCHAR(10),
     guilty     VARCHAR(10),
     mts        BOOLEAN,
     life       BOOLEAN,
@@ -38,10 +16,16 @@ CREATE TABLE test (
     beCloud    BOOLEAN,
     comment    VARCHAR(400) NOT NULL,
     crash      VARCHAR(400) NOT NULL,
-    PRIMARY KEY(t_id)
+    PRIMARY KEY(id)
 );
+
+DROP TABLE test;
+```
 ```
 ```
 go get github.com/go-sql-driver/mysql
 go get github.com/360EntSecGroup-Skylar/excelize
+
+C:\Users\artem.zhivushko\Downloads\migrate.windows-amd64.exe -path ./schema -database 'mysql://Artem:Artem$mena@tcp(192.168.37.64:3306)/beCloud_database' down
+C:\Users\artem.zhivushko\Downloads\migrate.windows-amd64.exe -path ./schema -database 'mysql://Artem:Artem$mena@tcp(192.168.37.64:3306)/beCloud_database' up
 ```

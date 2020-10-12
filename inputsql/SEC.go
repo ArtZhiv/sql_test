@@ -4,6 +4,7 @@ import (
 	"database/sql"
 	"fmt"
 	"strconv"
+	"strings"
 
 	// "github.com/360EntSecGroup-Skylar/excelize"
 	"github.com/360EntSecGroup-Skylar/excelize/v2"
@@ -59,22 +60,26 @@ func InputSEC() {
 			return
 		}
 
-		if sMts == "Да" {
+		sMts = strings.ToUpper(sMts)
+		sLife = strings.ToUpper(sLife)
+		sBecloud = strings.ToUpper(sBecloud)
+
+		if strings.Contains(sMts, "ДА") {
 			mts = true
 		} else {
 			mts = false
 		}
-		if sLife == "Да" {
+		if strings.Contains(sLife, "ДА") {
 			life = true
 		} else {
 			life = false
 		}
-		if sA1 == "Да" {
+		if strings.Contains(sA1, "ДА") {
 			a1 = true
 		} else {
 			a1 = false
 		}
-		if sBecloud == "Да" {
+		if strings.Contains(sBecloud, "ДА") {
 			becloud = true
 		} else {
 			becloud = false

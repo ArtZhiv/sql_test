@@ -4,6 +4,7 @@ import (
 	"database/sql"
 	"fmt"
 	"strconv"
+	"strings"
 
 	// "github.com/360EntSecGroup-Skylar/excelize"
 	"github.com/360EntSecGroup-Skylar/excelize/v2"
@@ -37,6 +38,7 @@ func InputENB() {
 	enbList := f.GetSheetName(0)
 	rowsEnb, _ := f.GetRows(enbList)
 	var e int
+	var mts, life, a1 bool
 	for rowEnb := range rowsEnb {
 		e = rowEnb
 	}
@@ -46,29 +48,51 @@ func InputENB() {
 		number, _ := f.GetCellValue(enbList, "A"+strconv.Itoa(i))
 		// address
 		region, _ := f.GetCellValue(enbList, "G"+strconv.Itoa(i))
-		city, _ := f.GetCellValue(enbList, "F"+strconv.Itoa(i))
+		district, _ := f.GetCellValue(enbList, "F"+strconv.Itoa(i))
 		fAdr, _ := f.GetCellValue(enbList, "B"+strconv.Itoa(i))
 		//
 		vendor, _ := f.GetCellValue(enbList, "D"+strconv.Itoa(i))
-		operator, _ := f.GetCellValue(enbList, "U"+strconv.Itoa(i))
+		place, _ := f.GetCellValue(enbList, "U"+strconv.Itoa(i))
+		sMts, _ := f.GetCellValue(enbList, "O"+strconv.Itoa(i))
+		sLife, _ := f.GetCellValue(enbList, "P"+strconv.Itoa(i))
+		sA1, _ := f.GetCellValue(enbList, "Q"+strconv.Itoa(i))
 
 		if err != nil {
 			fmt.Println(err.Error())
 			return
 		}
+		sMts = strings.ToUpper(sMts)
+		sLife = strings.ToUpper(sLife)
+		sA1 = strings.ToUpper(sA1)
 
+		if strings.Contains(sMts, "ДА") {
+			mts = true
+		} else {
+			mts = false
+		}
+		if strings.Contains(sLife, "ДА") {
+			life = true
+		} else {
+			life = false
+		}
+		if strings.Contains(sA1, "ДА") {
+			a1 = true
+		} else {
+			a1 = false
+		}
+		// fmt.Println(number, "-|-", fAdr, "-|-", vendor, "-|-", region, "-|-", district, "-|-", dem, "-|-", place, "-|-", mts, "-|-", life, "-|-", a1)
 		if dem != "" {
 			number, _ := strconv.Atoi(number)
-			result, err := db.Exec("INSERT INTO beCloud_database.eNodeB (number, address, vendor, region, province, demolition, place) values (?, ?, ?, ?, ?, ?, ?)",
-				number, "This eNodeB is dismantled", "???", "???", "???", dem, operator)
+			result, err := db.Exec("INSERT INTO beCloud_database.eNodeB (number, address, vendor, region, district, demolition, mts, life, a1, place) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+				number, "This eNodeB is dismantled", "???", "???", "???", dem, mts, life, a1, place)
 			if err != nil {
 				panic(err)
 			}
 			result.LastInsertId()
 		} else {
 			number, _ := strconv.Atoi(number)
-			result, err := db.Exec("INSERT INTO beCloud_database.eNodeB (number, address, vendor, region, province, demolition, place) values (?, ?, ?, ?, ?, ?, ?)",
-				number, fAdr, vendor, region, city, "___", operator)
+			result, err := db.Exec("INSERT INTO beCloud_database.eNodeB (number, address, vendor, region, district, demolition, mts, life, a1, place) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+				number, fAdr, vendor, region, district, "NULL", mts, life, a1, place)
 			if err != nil {
 				panic(err)
 			}

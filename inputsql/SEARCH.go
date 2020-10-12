@@ -67,7 +67,7 @@ func Search(nummmm string) {
 		fmt.Println("на", d, "eNodeB", nummmm, "не в коммерции")
 	} else {
 		for _, p := range products {
-			if p.demolition != "___" {
+			if p.demolition != "NULL" {
 				fmt.Println("+ -------------- + ---------- +")
 				fmt.Println("| ДЕМОНТИРОВАНА--|--", p.number, "--|--", p.demolition, "--|")
 				fmt.Println("+ -------------- + ---------- +")
@@ -185,7 +185,7 @@ func SearchList() {
 			fmt.Println("на", d, "eNodeB", elem, "не в коммерции")
 		} else {
 			for _, p := range products {
-				if p.demolition != "___" {
+				if p.demolition != "NULL" {
 					fmt.Println("+ -------------- + ---------- +")
 					fmt.Println("| ДЕМОНТИРОВАНА--|--", p.number, "--|--", p.demolition, "--|")
 					fmt.Println("+ -------------- + ---------- +")
@@ -288,7 +288,7 @@ func SearchRegion(nummmm string) {
 		fmt.Println("на", d, "eNodeB", nummmm, "не в коммерции")
 	} else {
 		for _, p := range products {
-			if p.demolition != "___" {
+			if p.demolition != "NULL" {
 				fmt.Println("+ -------------- + ---------- +")
 				fmt.Println("| ДЕМОНТИРОВАНА--|--", p.number, "--|--", p.demolition, "--|")
 				fmt.Println("+ -------------- + ---------- +")
@@ -333,7 +333,7 @@ func SearchCity(nummmm string) {
 		fmt.Println("на", d, "eNodeB", nummmm, "не в коммерции")
 	} else {
 		for _, p := range products {
-			if p.demolition != "___" {
+			if p.demolition != "NULL" {
 				fmt.Println("+ -------------- + ---------- +")
 				fmt.Println("| ДЕМОНТИРОВАНА--|--", p.number, "--|--", p.demolition, "--|")
 				fmt.Println("+ -------------- + ---------- +")
@@ -376,7 +376,7 @@ func SearchDel() {
 		products = append(products, p)
 	}
 	for _, p := range products {
-		if p.demolition != "___" {
+		if p.demolition != "NULL" {
 			fmt.Println("| ДЕМОНТИРОВАНА--|--", p.number, "--|--", p.demolition, "--|")
 		}
 	}
@@ -530,7 +530,7 @@ func FindMTSforText(elem string) {
 		fmt.Println("на", d, "eNodeB", elem, "не в коммерции")
 	} else {
 		for _, p := range products {
-			if p.demolition != "___" {
+			if p.demolition != "NULL" {
 				fmt.Println("+ -------------- + ---------- +")
 				fmt.Println("| ДЕМОНТИРОВАНА--|--", p.number, "--|--", p.demolition, "--|")
 				fmt.Println("+ -------------- + ---------- +")
