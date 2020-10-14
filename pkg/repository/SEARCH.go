@@ -1,4 +1,4 @@
-package inputsql
+package repository
 
 import (
 	"database/sql"
@@ -8,8 +8,6 @@ import (
 	"os/exec"
 	"strings"
 	"time"
-
-	"github.com/ArtZhiv/sql_test/cmd"
 )
 
 type enb struct {
@@ -20,6 +18,9 @@ type enb struct {
 	region     string
 	province   string
 	demolition string
+	mts        bool
+	life       bool
+	a1         bool
 	place      string
 }
 
@@ -36,7 +37,9 @@ type sec struct {
 
 // Search ...
 func Search(nummmm string) {
-	db, err := sql.Open("mysql", "Artem:Artem$mena@tcp(192.168.37.64:3306)/beCloud_database")
+	var nMts, nLife, nA1, nBecloud, pMts, pA1, pLife string
+
+	db, err := sql.Open("mysql", "beclouderp:becloud$erp@tcp(192.168.37.65:3306)/beCloud_database")
 
 	if err != nil {
 		panic(err)
@@ -54,7 +57,7 @@ func Search(nummmm string) {
 
 	for rows.Next() {
 		p := enb{}
-		err := rows.Scan(&p.id, &p.number, &p.address, &p.vendor, &p.region, &p.province, &p.demolition, &p.place)
+		err := rows.Scan(&p.id, &p.number, &p.address, &p.vendor, &p.region, &p.province, &p.demolition, &p.mts, &p.life, &p.a1, &p.place)
 		if err != nil {
 			fmt.Println(err)
 			continue
@@ -77,7 +80,27 @@ func Search(nummmm string) {
 				fmt.Println()
 				fmt.Println("\t", p.region, ", ", p.address)
 				fmt.Println("\t Vendor: ", p.vendor, "\n\t На площадке: ", p.place)
+
+				if p.mts == true {
+					pMts = "MTS"
+				} else {
+					pMts = "---"
+				}
+
+				if p.life == true {
+					pLife = "LIFE"
+				} else {
+					pLife = "----"
+				}
+
+				if p.a1 == true {
+					pA1 = "A1"
+				} else {
+					pA1 = "--"
+				}
 				fmt.Println()
+				fmt.Println("\t\t\tПрисутствуют:", "| ", pMts, " | ", pA1, " | ", pLife, " | ")
+				fmt.Println("\t  + ------------------------- + ----- + ---- + ------ +")
 
 				rows, err := db.Query("select * from beCloud_database.sector where number = ?", p.number)
 				if err != nil {
@@ -94,7 +117,6 @@ func Search(nummmm string) {
 					}
 					slector = append(slector, l)
 				}
-				var nMts, nLife, nA1, nBecloud string
 				for _, l := range slector {
 					if l.mts == true {
 						nMts = "MTS"
@@ -138,7 +160,9 @@ func Search(nummmm string) {
 
 // SearchList ...
 func SearchList() {
-	db, err := sql.Open("mysql", "Artem:Artem$mena@tcp(192.168.37.64:3306)/beCloud_database")
+	var nMts, nLife, nA1, nBecloud, pMts, pA1, pLife string
+
+	db, err := sql.Open("mysql", "beclouderp:becloud$erp@tcp(192.168.37.65:3306)/beCloud_database")
 
 	if err != nil {
 		panic(err)
@@ -172,7 +196,7 @@ func SearchList() {
 
 		for rows.Next() {
 			p := enb{}
-			err := rows.Scan(&p.id, &p.number, &p.address, &p.vendor, &p.region, &p.province, &p.demolition, &p.place)
+			err := rows.Scan(&p.id, &p.number, &p.address, &p.vendor, &p.region, &p.province, &p.demolition, &p.mts, &p.life, &p.a1, &p.place)
 			if err != nil {
 				fmt.Println(err)
 				continue
@@ -197,6 +221,27 @@ func SearchList() {
 					fmt.Println("\t Vendor: ", p.vendor, "\n\t На площадке: ", p.place)
 					fmt.Println()
 
+					if p.mts == true {
+						pMts = "MTS"
+					} else {
+						pMts = "---"
+					}
+
+					if p.life == true {
+						pLife = "LIFE"
+					} else {
+						pLife = "----"
+					}
+
+					if p.a1 == true {
+						pA1 = "A1"
+					} else {
+						pA1 = "--"
+					}
+
+					fmt.Println("\t\t\tПрисутствуют:", "| ", pMts, " | ", pA1, " | ", pLife, " | ")
+					fmt.Println("\t  + ------------------------- + ----- + ---- + ------ +")
+
 					rows, err := db.Query("select * from beCloud_database.sector where number = ?", p.number)
 					if err != nil {
 						panic(err)
@@ -212,7 +257,7 @@ func SearchList() {
 						}
 						slector = append(slector, l)
 					}
-					var nMts, nLife, nA1, nBecloud string
+
 					for _, l := range slector {
 						if l.mts == true {
 							nMts = "MTS"
@@ -257,7 +302,7 @@ func SearchList() {
 
 // SearchRegion ...
 func SearchRegion(nummmm string) {
-	db, err := sql.Open("mysql", "Artem:Artem$mena@tcp(192.168.37.64:3306)/beCloud_database")
+	db, err := sql.Open("mysql", "beclouderp:becloud$erp@tcp(192.168.37.65:3306)/beCloud_database")
 
 	if err != nil {
 		panic(err)
@@ -275,7 +320,7 @@ func SearchRegion(nummmm string) {
 
 	for rows.Next() {
 		p := enb{}
-		err := rows.Scan(&p.id, &p.number, &p.address, &p.vendor, &p.region, &p.province, &p.demolition, &p.place)
+		err := rows.Scan(&p.id, &p.number, &p.address, &p.vendor, &p.region, &p.province, &p.demolition, &p.mts, &p.life, &p.a1, &p.place)
 		if err != nil {
 			fmt.Println(err)
 			continue
@@ -302,7 +347,7 @@ func SearchRegion(nummmm string) {
 
 // SearchCity ...
 func SearchCity(nummmm string) {
-	db, err := sql.Open("mysql", "Artem:Artem$mena@tcp(192.168.37.64:3306)/beCloud_database")
+	db, err := sql.Open("mysql", "beclouderp:becloud$erp@tcp(192.168.37.65:3306)/beCloud_database")
 
 	if err != nil {
 		panic(err)
@@ -320,7 +365,7 @@ func SearchCity(nummmm string) {
 
 	for rows.Next() {
 		p := enb{}
-		err := rows.Scan(&p.id, &p.number, &p.address, &p.vendor, &p.region, &p.province, &p.demolition, &p.place)
+		err := rows.Scan(&p.id, &p.number, &p.address, &p.vendor, &p.region, &p.province, &p.demolition, &p.mts, &p.life, &p.a1, &p.place)
 		if err != nil {
 			fmt.Println(err)
 			continue
@@ -351,7 +396,7 @@ func SearchCity(nummmm string) {
 
 // SearchDel ...
 func SearchDel() {
-	db, err := sql.Open("mysql", "Artem:Artem$mena@tcp(192.168.37.64:3306)/beCloud_database")
+	db, err := sql.Open("mysql", "beclouderp:becloud$erp@tcp(192.168.37.65:3306)/beCloud_database")
 
 	if err != nil {
 		panic(err)
@@ -368,7 +413,7 @@ func SearchDel() {
 
 	for rows.Next() {
 		p := enb{}
-		err := rows.Scan(&p.id, &p.number, &p.address, &p.vendor, &p.region, &p.province, &p.demolition, &p.place)
+		err := rows.Scan(&p.id, &p.number, &p.address, &p.vendor, &p.region, &p.province, &p.demolition, &p.mts, &p.life, &p.a1, &p.place)
 		if err != nil {
 			fmt.Println(err)
 			continue
@@ -385,14 +430,14 @@ func SearchDel() {
 
 // SearchMTS ...
 func SearchMTS() {
-	db, err := sql.Open("mysql", "Artem:Artem$mena@tcp(192.168.37.64:3306)/beCloud_database")
+	db, err := sql.Open("mysql", "beclouderp:becloud$erp@tcp(192.168.37.65:3306)/beCloud_database")
 
 	if err != nil {
 		panic(err)
 	}
 	defer db.Close()
 
-	cmd.ClearCMD()
+	ClearCMD()
 	fmt.Print("Введите список eNodeB: ")
 
 	var nummmm []string
@@ -501,7 +546,7 @@ func TextSearchMTS() {
 
 // FindMTSforText ...
 func FindMTSforText(elem string) {
-	db, err := sql.Open("mysql", "Artem:Artem$mena@tcp(192.168.37.64:3306)/beCloud_database")
+	db, err := sql.Open("mysql", "beclouderp:becloud$erp@tcp(192.168.37.65:3306)/beCloud_database")
 
 	if err != nil {
 		panic(err)
@@ -517,7 +562,7 @@ func FindMTSforText(elem string) {
 
 	for rows.Next() {
 		p := enb{}
-		err := rows.Scan(&p.id, &p.number, &p.address, &p.vendor, &p.region, &p.province, &p.demolition, &p.place)
+		err := rows.Scan(&p.id, &p.number, &p.address, &p.vendor, &p.region, &p.province, &p.demolition, &p.mts, &p.life, &p.a1, &p.place)
 		if err != nil {
 			fmt.Println(err)
 			continue

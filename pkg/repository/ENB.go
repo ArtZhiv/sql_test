@@ -1,4 +1,4 @@
-package inputsql
+package repository
 
 import (
 	"database/sql"
@@ -6,14 +6,12 @@ import (
 	"strconv"
 	"strings"
 
-	// "github.com/360EntSecGroup-Skylar/excelize"
 	"github.com/360EntSecGroup-Skylar/excelize/v2"
-	"github.com/ArtZhiv/sql_test/cmd"
 )
 
 // InputENB ...
 func InputENB() {
-	db, err := sql.Open("mysql", "Artem:Artem$mena@tcp(192.168.37.64:3306)/beCloud_database")
+	db, err := sql.Open("mysql", "beclouderp:becloud$erp@tcp(192.168.37.65:3306)/beCloud_database")
 
 	if err != nil {
 		panic(err)
@@ -102,6 +100,6 @@ func InputENB() {
 			}
 		}
 	}
-	cmd.ClearCMD()
+	ClearCMD()
 	fmt.Println("Добавлено: ", count)
 }

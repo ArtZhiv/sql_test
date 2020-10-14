@@ -1,4 +1,4 @@
-package inputsql
+package repository
 
 import (
 	"database/sql"
@@ -6,8 +6,6 @@ import (
 	"strconv"
 	"strings"
 	"time"
-
-	"github.com/ArtZhiv/sql_test/cmd"
 )
 
 // enb2 ...
@@ -25,7 +23,7 @@ type enb2 struct {
 // Convert ...
 func Convert(a string) {
 
-	cmd.ClearCMD()
+	ClearCMD()
 
 	// Перевод для номера eNodeB
 	c := a[5:10]
@@ -37,7 +35,7 @@ func Convert(a string) {
 	i, _ := strconv.ParseInt(b, 16, 64)
 	m := strconv.FormatInt(i, 10)
 
-	db, err := sql.Open("mysql", "Artem:Artem$mena@tcp(192.168.37.64:3306)/beCloud_database")
+	db, err := sql.Open("mysql", "beclouderp:becloud$erp@tcp(192.168.37.65:3306)/beCloud_database")
 	if err != nil {
 		panic(err)
 	}

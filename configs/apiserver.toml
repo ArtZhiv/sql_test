@@ -1,0 +1,5 @@
+bind_addr = ":8080"
+log_level = "debug"
+
+[store]
+databaseurl = "user=beclouderp password=becloud$erp host=192.168.37.65 port=3306 dbname=beCloud_database"
