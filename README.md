@@ -1,7 +1,6 @@
 # sql_test
 
 ```
-```
 go run cmd\main.go
 
 iwr -useb get.scoop.sh | iex
