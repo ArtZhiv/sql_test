@@ -496,7 +496,7 @@ func TextSearchMTS() {
 	fileCreate, err := os.Create(path)
 	if err != nil {
 		panic(err)
-		os.Exit(1)
+		// os.Exit(1)
 	} else {
 		fileCreate.Close()
 	}
@@ -511,7 +511,7 @@ func TextSearchMTS() {
 	file, err := os.Open(path)
 	if err != nil {
 		panic(err)
-		os.Exit(1)
+		// os.Exit(1)
 	}
 
 	data := make([]byte, 1024)
