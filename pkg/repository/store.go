@@ -1,6 +1,8 @@
 package repository
 
 import (
+	"fmt"
+
 	"github.com/jmoiron/sqlx"
 
 	_ "github.com/go-sql-driver/mysql" // ...
@@ -13,11 +15,11 @@ type Store struct {
 }
 
 // New ...
-// func New(config *Config) *Store {
-// 	return &Config{
-// 		config: config,
-// 	}
-// }
+func New(config *Config) *Store {
+	return &Store{
+		config: config,
+	}
+}
 
 // Open ...
 func (s *Store) Open() error {
@@ -31,11 +33,12 @@ func (s *Store) Open() error {
 	}
 
 	s.db = db
-
+	fmt.Println("Open")
 	return nil
 }
 
 // Close ...
 func (s *Store) Close() {
 	s.db.Close()
+	fmt.Println("Close")
 }

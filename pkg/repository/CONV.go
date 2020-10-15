@@ -17,13 +17,14 @@ type enb2 struct {
 	region     string
 	province   string
 	demolition string
+	mts        bool
+	life       bool
+	a1         bool
 	place      string
 }
 
 // Convert ...
 func Convert(a string) {
-
-	ClearCMD()
 
 	// Перевод для номера eNodeB
 	c := a[5:10]
@@ -50,7 +51,7 @@ func Convert(a string) {
 
 	for rows.Next() {
 		p := enb2{}
-		err := rows.Scan(&p.id, &p.number, &p.address, &p.vendor, &p.region, &p.province, &p.demolition, &p.place)
+		err := rows.Scan(&p.id, &p.number, &p.address, &p.vendor, &p.region, &p.province, &p.demolition, &p.mts, &p.life, &p.a1, &p.place)
 		if err != nil {
 			fmt.Println(err)
 			continue
@@ -63,7 +64,7 @@ func Convert(a string) {
 		fmt.Println(mm, "не в коммерции на", d)
 	} else {
 		for _, p := range products {
-			if p.demolition != "___" {
+			if p.demolition != "NULL" {
 				len := len(p.demolition) - 4
 				fmt.Println("+ -------------- + ---------- +", strings.Repeat("-", len), "+")
 				fmt.Println("| ДЕМОНТИРОВАНА--|--", p.number, "--|--", p.demolition, "--|")

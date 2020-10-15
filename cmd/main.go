@@ -1,13 +1,37 @@
 package main
 
 import (
+	"flag"
 	"fmt"
 
 	"github.com/ArtZhiv/sql_test/pkg/repository"
 	_ "github.com/go-sql-driver/mysql"
 )
 
+// // APIServer ...
+// type APIServer struct {
+// 	config *Config
+// 	// store  *store.Store
+// }
+
+// // New ...
+// func New(config *Config) *APIServer {
+// 	return &APIServer{
+// 		config: config,
+// 	}
+// }
+
+var (
+	configPath string
+)
+
+func init() {
+	flag.StringVar(&configPath, "config-path", "configs/apiserver.toml", "path to config file")
+}
+
 func main() {
+	flag.Parse()
+
 	var vvod int
 	repository.ClearCMD()
 	repository.InfoV()
@@ -75,7 +99,23 @@ func main() {
 		case a == 2:
 			repository.TextSearchMTS()
 		}
+	case vvod == 666:
+		// if err := s.configureStore(); err != nil {
+		// 	panic(err)
+		// }
+		// repository.Open()
+		// repository.Close()
 	case vvod == 0:
 		break
 	}
 }
+
+// func (s *APIServer) configureStore() error {
+// 	st := store.New(s.config.Store)
+// 	if err := st.Open(); err != nil {
+// 		panic(err)
+// 	}
+
+// 	s.store = st
+// 	return nil
+// }
