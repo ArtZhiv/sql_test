@@ -491,7 +491,7 @@ func SearchMTS() {
 // TextSearchMTS ...
 func TextSearchMTS() {
 	fmt.Println()
-	path := "files/workMts.txt"
+	path := "../files/workMts.txt"
 
 	fileCreate, err := os.Create(path)
 	if err != nil {
@@ -502,7 +502,7 @@ func TextSearchMTS() {
 	}
 
 	fmt.Println("Сейчас откроется текстовый файл вставьте то что прислал МТС и сохраните файл и нажмите ENTER")
-	cmd := exec.Command("powershell", "/c", "./files/workMts.txt")
+	cmd := exec.Command("powershell", "/c", "../files/workMts.txt")
 	cmd.Stdout = os.Stdout
 	cmd.Run()
 	fmt.Scanln()
