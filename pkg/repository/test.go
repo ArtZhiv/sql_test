@@ -81,13 +81,17 @@ func main() {
 
 	for _, file := range files {
 		// fmt.Println(file.Name(), "---", file.ModTime().Format("02012006150405"))
+
 		if strings.Contains(file.Name(), "atm_anomaly") {
-			// fmt.Printf("%s --- %v\n", file.Name(), file.ModTime().Format("20060102150405"))
+			fmt.Printf("\n\n!!!!!!---%s --- %v\n\n\n", file.Name(), file.ModTime().Format("20060102150405"))
 			p, _ := strconv.Atoi(file.ModTime().Format("20060102150405"))
 			dirDdos[file.Name()] = p
 		}
-		for key, value := range dirDdos {
-			fmt.Println(key, "-||-", value)
-		}
+	}
+	fmt.Println()
+	fmt.Println(dirDdos)
+	fmt.Println()
+	for key, value := range dirDdos {
+		fmt.Println(key, "-||-", value)
 	}
 }
