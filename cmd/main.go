@@ -8,19 +8,6 @@ import (
 	_ "github.com/go-sql-driver/mysql"
 )
 
-// // APIServer ...
-// type APIServer struct {
-// 	config *Config
-// 	// store  *store.Store
-// }
-
-// // New ...
-// func New(config *Config) *APIServer {
-// 	return &APIServer{
-// 		config: config,
-// 	}
-// }
-
 var (
 	configPath string
 )
@@ -100,22 +87,9 @@ func main() {
 			repository.TextSearchMTS()
 		}
 	case vvod == 666:
-		// if err := s.configureStore(); err != nil {
-		// 	panic(err)
-		// }
-		// repository.Open()
-		// repository.Close()
+		// handler.OpenTestConnect()
+		repository.dirByName()
 	case vvod == 0:
 		break
 	}
 }
-
-// func (s *APIServer) configureStore() error {
-// 	st := store.New(s.config.Store)
-// 	if err := st.Open(); err != nil {
-// 		panic(err)
-// 	}
-
-// 	s.store = st
-// 	return nil
-// }

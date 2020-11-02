@@ -1,0 +1,399 @@
+﻿Resource Type: ALL
+Anomaly Type: ALL
+Traffic Direction: Outgoing
+Anomaly Status: ALL
+Minimum Severity: Yellow
+Start Time: 2020/10/29 12:00
+Until: 2020/11/1 12:59
+Duration: 
+Traffic Amount: 
+Victim/Infected IP Prefix: 
+
+
+No., ID, CHK, Impact, Status, Start Time / End Time, Duration, Direction, Type, Resource
+1,100318,,Yellow /679.51 Mbps /  over 200.00 Mbps / max 679.51 Mbps,Ongoing,11-01 12:15 Ongoing,02:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+2,100317,,Yellow /679.22 Mbps /  over 50.00 Mbps / max 679.22 Mbps,Ongoing,11-01 12:15 Ongoing,02:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+3,100316,,Yellow /624.79 Mbps /  over 200.00 Mbps / max 624.79 Mbps,Recovered,11-01 12:1011-01 12:13,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+4,100315,,Yellow /624.53 Mbps /  over 50.00 Mbps / max 624.53 Mbps,Recovered,11-01 12:1011-01 12:13,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+5,100314,,Yellow /571.05 Mbps /  over 200.00 Mbps / max 571.05 Mbps,Recovered,11-01 12:0511-01 12:08,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+6,100313,,Yellow /570.79 Mbps /  over 50.00 Mbps / max 570.79 Mbps,Recovered,11-01 12:0511-01 12:08,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+7,100312,,Yellow /730.17 Mbps /  over 200.00 Mbps / max 730.17 Mbps,Recovered,11-01 12:0011-01 12:03,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+8,100311,,Yellow /729.79 Mbps /  over 50.00 Mbps / max 729.79 Mbps,Recovered,11-01 12:0011-01 12:03,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+9,100310,,Yellow /607.21 Mbps /  over 200.00 Mbps / max 607.21 Mbps,Recovered,11-01 11:5511-01 11:58,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+10,100309,,Yellow /606.89 Mbps /  over 50.00 Mbps / max 606.89 Mbps,Recovered,11-01 11:5511-01 11:58,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+11,100308,,Yellow /568.14 Mbps /  over 200.00 Mbps / max 568.14 Mbps,Recovered,11-01 11:5011-01 11:53,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+12,100307,,Yellow /567.88 Mbps /  over 50.00 Mbps / max 567.88 Mbps,Recovered,11-01 11:5011-01 11:53,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+13,100306,,Yellow /684.09 Mbps /  over 200.00 Mbps / max 684.09 Mbps,Recovered,11-01 11:4511-01 11:48,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+14,100305,,Yellow /582.42 Mbps /  over 50.00 Mbps / max 582.42 Mbps,Recovered,11-01 11:4511-01 11:48,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+15,100304,,Yellow /690.71 Mbps /  over 200.00 Mbps / max 690.71 Mbps,Recovered,11-01 11:4011-01 11:43,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+16,100303,,Yellow /601.79 Mbps /  over 50.00 Mbps / max 601.79 Mbps,Recovered,11-01 11:4011-01 11:43,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+17,100302,,Yellow /624.80 Mbps /  over 200.00 Mbps / max 624.80 Mbps,Recovered,11-01 11:3511-01 11:38,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+18,100301,,Yellow /532.65 Mbps /  over 50.00 Mbps / max 532.65 Mbps,Recovered,11-01 11:3511-01 11:38,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+19,100300,checked,Yellow /679.58 Mbps /  over 200.00 Mbps / max 679.58 Mbps,Recovered,11-01 11:3011-01 11:33,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+20,100299,checked,Yellow /600.38 Mbps /  over 50.00 Mbps / max 600.38 Mbps,Recovered,11-01 11:3011-01 11:33,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+21,100298,checked,Yellow /703.28 Mbps /  over 200.00 Mbps / max 703.28 Mbps,Recovered,11-01 11:2511-01 11:28,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+22,100297,checked,Yellow /600.87 Mbps /  over 50.00 Mbps / max 600.87 Mbps,Recovered,11-01 11:2511-01 11:28,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+23,100296,checked,Yellow /561.39 Mbps /  over 200.00 Mbps / max 561.39 Mbps,Recovered,11-01 11:2011-01 11:23,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+24,100295,checked,Yellow /491.54 Mbps /  over 50.00 Mbps / max 491.54 Mbps,Recovered,11-01 11:2011-01 11:23,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+25,100294,,Yellow /5.28 Kpps /  over 5.00 Kpps / max 5.28 Kpps,Recovered,11-01 11:1611-01 11:19,03:00,To Non-Home,DDoS / TCP_PUSH / pps,[Sub-Network] / ActiveHost / 185.65.137.10
+26,100293,checked,Yellow /680.03 Mbps /  over 200.00 Mbps / max 680.03 Mbps,Recovered,11-01 11:1511-01 11:18,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+27,100292,checked,Yellow /607.46 Mbps /  over 50.00 Mbps / max 607.46 Mbps,Recovered,11-01 11:1511-01 11:18,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+28,100291,checked,Yellow /698.80 Mbps /  over 200.00 Mbps / max 698.80 Mbps,Recovered,11-01 11:1011-01 11:13,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+29,100290,checked,Yellow /616.83 Mbps /  over 50.00 Mbps / max 616.83 Mbps,Recovered,11-01 11:1011-01 11:13,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+30,100289,checked,Yellow /709.03 Mbps /  over 200.00 Mbps / max 709.03 Mbps,Recovered,11-01 11:0511-01 11:08,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+31,100288,checked,Yellow /608.16 Mbps /  over 50.00 Mbps / max 608.16 Mbps,Recovered,11-01 11:0511-01 11:08,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+32,100287,checked,Yellow /684.85 Mbps /  over 200.00 Mbps / max 684.85 Mbps,Recovered,11-01 11:0011-01 11:03,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+33,100286,checked,Yellow /611.19 Mbps /  over 50.00 Mbps / max 611.19 Mbps,Recovered,11-01 11:0011-01 11:03,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+34,100285,checked,Yellow /569.03 Mbps /  over 200.00 Mbps / max 569.03 Mbps,Recovered,11-01 10:5511-01 10:58,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+35,100284,checked,Yellow /492.33 Mbps /  over 50.00 Mbps / max 492.33 Mbps,Recovered,11-01 10:5511-01 10:58,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+36,100283,checked,Red /7.53 Kpps /  over 7.00 Kpps / max 7.78 Kpps,Recovered,11-01 10:4511-01 10:55,10:00,To Home,DDoS / TCP_PUSH / pps,[Sub-Network] / RCOD / 195.50.6.62
+37,100282,checked,Yellow /5.03 Kpps /  over 5.00 Kpps / max 5.03 Kpps,Recovered,11-01 08:4711-01 08:50,03:00,To Non-Home,DDoS / TCP_PUSH / pps,[Sub-Network] / ActiveHost / 185.65.137.10
+38,100281,checked,Red /18.23 Gbps /  over 2.00 Gbps / max 26.16 Gbps,Recovered,11-01 08:1011-01 10:55,2:45:00,Incoming,Traffic Anomaly / bps,[Sub-Network] / IP Telcom
+39,100280,checked,Red /24.37 Gbps /  over 200.00 Mbps / max 25.67 Gbps,Recovered,11-01 08:0811-01 10:53,2:45:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+40,100279,checked,Red /397.47 Kpps /  over 20.00 Kpps / max 493.75 Kpps,Recovered,11-01 08:0811-01 10:53,2:45:00,To Non-Home,DDoS / Malform UDP with port 0 / pps,[Sub-Network] / IP Telcom / 91.90.223.202
+41,100278,checked,Red /18.42 Gbps /  over 50.00 Mbps / max 19.95 Gbps,Recovered,11-01 08:0811-01 10:53,2:45:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+42,100277,,Yellow /784.69 Mbps /  over 200.00 Mbps / max 784.69 Mbps,Recovered,11-01 08:0211-01 08:05,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+43,100276,,Yellow /660.69 Mbps /  over 50.00 Mbps / max 660.69 Mbps,Recovered,11-01 08:0211-01 08:05,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+44,100275,,Yellow /667.54 Mbps /  over 200.00 Mbps / max 667.54 Mbps,Recovered,11-01 07:5711-01 08:00,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+45,100274,,Yellow /590.46 Mbps /  over 50.00 Mbps / max 590.46 Mbps,Recovered,11-01 07:5711-01 08:00,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+46,100273,,Yellow /669.60 Mbps /  over 200.00 Mbps / max 669.60 Mbps,Recovered,11-01 07:5211-01 07:55,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+47,100272,,Yellow /669.00 Mbps /  over 50.00 Mbps / max 669.00 Mbps,Recovered,11-01 07:5211-01 07:55,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+48,100271,,Yellow /660.20 Mbps /  over 200.00 Mbps / max 660.20 Mbps,Recovered,11-01 07:4711-01 07:50,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+49,100270,,Yellow /598.79 Mbps /  over 50.00 Mbps / max 598.79 Mbps,Recovered,11-01 07:4711-01 07:50,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+50,100269,,Yellow /660.93 Mbps /  over 200.00 Mbps / max 660.93 Mbps,Recovered,11-01 07:4211-01 07:45,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+51,100268,,Yellow /590.51 Mbps /  over 50.00 Mbps / max 590.51 Mbps,Recovered,11-01 07:4211-01 07:45,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+52,100267,,Yellow /672.98 Mbps /  over 200.00 Mbps / max 672.98 Mbps,Recovered,11-01 07:3711-01 07:40,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+53,100266,,Yellow /613.55 Mbps /  over 50.00 Mbps / max 613.55 Mbps,Recovered,11-01 07:3711-01 07:40,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+54,100265,,Yellow /669.97 Mbps /  over 200.00 Mbps / max 669.97 Mbps,Recovered,11-01 07:3211-01 07:35,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+55,100264,,Yellow /609.93 Mbps /  over 50.00 Mbps / max 609.93 Mbps,Recovered,11-01 07:3211-01 07:35,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+56,100263,,Yellow /675.99 Mbps /  over 200.00 Mbps / max 675.99 Mbps,Recovered,11-01 07:2711-01 07:30,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+57,100262,,Yellow /620.96 Mbps /  over 50.00 Mbps / max 620.96 Mbps,Recovered,11-01 07:2711-01 07:30,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+58,100261,,Yellow /629.50 Mbps /  over 200.00 Mbps / max 629.50 Mbps,Recovered,11-01 07:2211-01 07:25,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+59,100260,,Yellow /578.39 Mbps /  over 50.00 Mbps / max 578.39 Mbps,Recovered,11-01 07:2211-01 07:25,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+60,100259,,Yellow /665.23 Mbps /  over 200.00 Mbps / max 665.23 Mbps,Recovered,11-01 07:1711-01 07:20,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+61,100258,,Yellow /610.51 Mbps /  over 50.00 Mbps / max 610.51 Mbps,Recovered,11-01 07:1711-01 07:20,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+62,100257,,Yellow /529.71 Mbps /  over 200.00 Mbps / max 529.71 Mbps,Recovered,11-01 07:1211-01 07:15,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+63,100256,,Yellow /486.70 Mbps /  over 50.00 Mbps / max 486.70 Mbps,Recovered,11-01 07:1211-01 07:15,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+64,100255,,Red /18.96 Gbps /  over 2.00 Gbps / max 22.74 Gbps,Recovered,11-01 06:3511-01 07:15,40:00,Incoming,Traffic Anomaly / bps,[Sub-Network] / IP Telcom
+65,100254,,Red /17.57 Gbps /  over 200.00 Mbps / max 25.55 Gbps,Recovered,11-01 06:3311-01 07:10,37:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+66,100253,,Red /348.78 Kpps /  over 20.00 Kpps / max 420.57 Kpps,Recovered,11-01 06:3311-01 07:10,37:00,To Non-Home,DDoS / Malform UDP with port 0 / pps,[Sub-Network] / IP Telcom / 91.90.223.202
+67,100252,,Yellow /5.17 Kpps /  over 5.00 Kpps / max 5.17 Kpps,Recovered,11-01 06:3211-01 06:35,03:00,To Non-Home,DDoS / TCP_PUSH / pps,[Sub-Network] / ActiveHost / 185.65.137.10
+68,100251,,Red /11.84 Gbps /  over 50.00 Mbps / max 19.87 Gbps,Recovered,11-01 06:3211-01 07:10,38:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+69,100250,,Yellow /637.05 Mbps /  over 50.00 Mbps / max 637.05 Mbps,Recovered,11-01 06:2711-01 06:30,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+70,100249,,Yellow /623.91 Mbps /  over 50.00 Mbps / max 623.91 Mbps,Recovered,11-01 06:2211-01 06:25,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+71,100248,,Yellow /614.59 Mbps /  over 50.00 Mbps / max 614.59 Mbps,Recovered,11-01 06:1711-01 06:20,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+72,100247,,Yellow /619.08 Mbps /  over 50.00 Mbps / max 619.08 Mbps,Recovered,11-01 06:1211-01 06:15,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+73,100246,,Yellow /617.00 Mbps /  over 50.00 Mbps / max 617.00 Mbps,Recovered,11-01 06:0711-01 06:10,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+74,100245,,Yellow /611.27 Mbps /  over 50.00 Mbps / max 611.27 Mbps,Recovered,11-01 06:0211-01 06:05,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+75,100244,,Yellow /628.25 Mbps /  over 50.00 Mbps / max 628.25 Mbps,Recovered,11-01 05:5711-01 06:00,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+76,100243,,Yellow /588.74 Mbps /  over 50.00 Mbps / max 588.74 Mbps,Recovered,11-01 05:5211-01 05:55,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+77,100242,,Yellow /566.21 Mbps /  over 50.00 Mbps / max 566.21 Mbps,Recovered,11-01 05:4711-01 05:50,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+78,100241,,Yellow /644.81 Mbps /  over 50.00 Mbps / max 644.81 Mbps,Recovered,11-01 05:4211-01 05:45,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+79,100240,,Yellow /592.04 Mbps /  over 200.00 Mbps / max 592.04 Mbps,Recovered,11-01 05:3711-01 05:40,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+80,100239,,Red /539.87 Mbps /  over 50.00 Mbps / max 539.87 Mbps,Recovered,11-01 05:3611-01 05:40,04:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+81,100238,,Yellow /522.55 Mbps /  over 200.00 Mbps / max 522.55 Mbps,Recovered,11-01 05:3111-01 05:34,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+82,100237,,Red /164.38 Mbps /  over 50.00 Mbps / max 445.34 Mbps,Recovered,11-01 05:3111-01 05:35,04:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+83,100236,,Yellow /612.70 Mbps /  over 200.00 Mbps / max 612.70 Mbps,Recovered,11-01 05:2611-01 05:29,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+84,100235,,Yellow /531.11 Mbps /  over 50.00 Mbps / max 531.11 Mbps,Recovered,11-01 05:2611-01 05:29,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+85,100234,,Yellow /681.81 Mbps /  over 200.00 Mbps / max 681.81 Mbps,Recovered,11-01 05:2111-01 05:24,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+86,100233,,Yellow /602.05 Mbps /  over 50.00 Mbps / max 602.05 Mbps,Recovered,11-01 05:2111-01 05:24,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+87,100232,,Yellow /716.47 Mbps /  over 200.00 Mbps / max 716.47 Mbps,Recovered,11-01 05:1611-01 05:19,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+88,100231,,Yellow /626.94 Mbps /  over 50.00 Mbps / max 626.94 Mbps,Recovered,11-01 05:1611-01 05:19,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+89,100230,,Yellow /698.48 Mbps /  over 200.00 Mbps / max 698.48 Mbps,Recovered,11-01 05:1111-01 05:14,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+90,100229,,Yellow /586.30 Mbps /  over 50.00 Mbps / max 586.30 Mbps,Recovered,11-01 05:1111-01 05:14,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+91,100228,,Yellow /679.13 Mbps /  over 200.00 Mbps / max 679.13 Mbps,Recovered,11-01 05:0611-01 05:09,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+92,100227,,Yellow /596.57 Mbps /  over 50.00 Mbps / max 596.57 Mbps,Recovered,11-01 05:0611-01 05:09,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+93,100226,,Yellow /653.31 Mbps /  over 200.00 Mbps / max 653.31 Mbps,Recovered,11-01 05:0111-01 05:04,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+94,100225,,Yellow /573.88 Mbps /  over 50.00 Mbps / max 573.88 Mbps,Recovered,11-01 05:0111-01 05:04,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+95,100224,,Yellow /701.73 Mbps /  over 200.00 Mbps / max 701.73 Mbps,Recovered,11-01 04:5611-01 04:59,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+96,100223,,Yellow /604.45 Mbps /  over 50.00 Mbps / max 604.45 Mbps,Recovered,11-01 04:5611-01 04:59,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+97,100222,,Yellow /711.33 Mbps /  over 200.00 Mbps / max 711.33 Mbps,Recovered,11-01 04:5111-01 04:54,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+98,100221,,Yellow /620.79 Mbps /  over 50.00 Mbps / max 620.79 Mbps,Recovered,11-01 04:5111-01 04:54,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+99,100220,,Yellow /718.37 Mbps /  over 200.00 Mbps / max 718.37 Mbps,Recovered,11-01 04:4611-01 04:49,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+100,100219,,Yellow /643.17 Mbps /  over 50.00 Mbps / max 643.17 Mbps,Recovered,11-01 04:4611-01 04:49,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+101,100218,,Yellow /2.24 Gbps /  over 2.00 Gbps / max 2.24 Gbps,Recovered,11-01 04:4311-01 04:46,03:00,To Non-Home,DDoS / Host TCP Traffic / bps,[Home Scope] / Non-Home / 185.190.189.202
+102,100217,checked,Yellow /662.25 Mbps /  over 200.00 Mbps / max 662.25 Mbps,Recovered,11-01 04:4111-01 04:44,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+103,100216,checked,Yellow /569.36 Mbps /  over 50.00 Mbps / max 569.36 Mbps,Recovered,11-01 04:4111-01 04:44,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+104,100215,,Yellow /762.54 Mbps /  over 200.00 Mbps / max 762.54 Mbps,Recovered,11-01 04:3611-01 04:39,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+105,100214,,Yellow /654.44 Mbps /  over 50.00 Mbps / max 654.44 Mbps,Recovered,11-01 04:3611-01 04:39,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+106,100213,,Yellow /645.59 Mbps /  over 200.00 Mbps / max 645.59 Mbps,Recovered,11-01 04:3111-01 04:34,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+107,100212,,Yellow /561.97 Mbps /  over 50.00 Mbps / max 561.97 Mbps,Recovered,11-01 04:3111-01 04:34,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+108,100211,,Yellow /680.23 Mbps /  over 200.00 Mbps / max 680.23 Mbps,Recovered,11-01 04:2611-01 04:29,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+109,100210,,Yellow /605.16 Mbps /  over 50.00 Mbps / max 605.16 Mbps,Recovered,11-01 04:2611-01 04:29,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+110,100209,,Yellow /704.55 Mbps /  over 200.00 Mbps / max 704.55 Mbps,Recovered,11-01 04:2111-01 04:24,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+111,100208,,Yellow /609.46 Mbps /  over 50.00 Mbps / max 609.46 Mbps,Recovered,11-01 04:2111-01 04:24,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+112,100207,,Yellow /669.57 Mbps /  over 200.00 Mbps / max 669.57 Mbps,Recovered,11-01 04:1611-01 04:19,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+113,100206,,Yellow /593.72 Mbps /  over 50.00 Mbps / max 593.72 Mbps,Recovered,11-01 04:1611-01 04:19,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+114,100205,,Yellow /717.12 Mbps /  over 200.00 Mbps / max 717.12 Mbps,Recovered,11-01 04:1111-01 04:14,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+115,100204,,Yellow /632.26 Mbps /  over 50.00 Mbps / max 632.26 Mbps,Recovered,11-01 04:1111-01 04:14,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+116,100203,,Yellow /728.10 Mbps /  over 200.00 Mbps / max 728.10 Mbps,Recovered,11-01 04:0611-01 04:09,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+117,100202,,Yellow /637.46 Mbps /  over 50.00 Mbps / max 637.46 Mbps,Recovered,11-01 04:0611-01 04:09,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+118,100201,,Yellow /678.01 Mbps /  over 200.00 Mbps / max 678.01 Mbps,Recovered,11-01 04:0111-01 04:04,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+119,100200,,Yellow /582.90 Mbps /  over 50.00 Mbps / max 582.90 Mbps,Recovered,11-01 04:0111-01 04:04,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+120,100199,,Yellow /723.84 Mbps /  over 200.00 Mbps / max 723.84 Mbps,Recovered,11-01 03:5611-01 03:59,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+121,100198,,Yellow /626.19 Mbps /  over 50.00 Mbps / max 626.19 Mbps,Recovered,11-01 03:5611-01 03:59,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+122,100197,,Yellow /705.50 Mbps /  over 200.00 Mbps / max 705.50 Mbps,Recovered,11-01 03:5111-01 03:54,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+123,100196,,Yellow /611.04 Mbps /  over 50.00 Mbps / max 611.04 Mbps,Recovered,11-01 03:5111-01 03:54,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+124,100195,,Yellow /669.92 Mbps /  over 200.00 Mbps / max 669.92 Mbps,Recovered,11-01 03:4611-01 03:49,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+125,100194,,Yellow /613.06 Mbps /  over 50.00 Mbps / max 613.06 Mbps,Recovered,11-01 03:4611-01 03:49,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+126,100193,,Yellow /582.95 Mbps /  over 200.00 Mbps / max 582.95 Mbps,Recovered,11-01 03:4111-01 03:44,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+127,100192,,Yellow /520.93 Mbps /  over 50.00 Mbps / max 520.93 Mbps,Recovered,11-01 03:4111-01 03:44,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+128,100191,,Yellow /697.03 Mbps /  over 200.00 Mbps / max 697.03 Mbps,Recovered,11-01 03:3611-01 03:39,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+129,100190,,Yellow /634.85 Mbps /  over 50.00 Mbps / max 634.85 Mbps,Recovered,11-01 03:3611-01 03:39,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+130,100189,,Yellow /610.87 Mbps /  over 200.00 Mbps / max 610.87 Mbps,Recovered,11-01 03:3111-01 03:34,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+131,100188,,Yellow /563.64 Mbps /  over 50.00 Mbps / max 563.64 Mbps,Recovered,11-01 03:3111-01 03:34,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+132,100187,,Red /22.07 Gbps /  over 2.00 Gbps / max 24.38 Gbps,Recovered,11-01 03:2011-01 03:35,15:00,Incoming,Traffic Anomaly / bps,[Sub-Network] / IP Telcom
+133,100186,,Red /23.73 Gbps /  over 200.00 Mbps / max 23.94 Gbps,Recovered,11-01 03:1611-01 03:29,13:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+134,100185,,Red /351.35 Kpps /  over 20.00 Kpps / max 387.48 Kpps,Recovered,11-01 03:1611-01 03:29,13:00,To Non-Home,DDoS / Malform UDP with port 0 / pps,[Sub-Network] / IP Telcom / 91.90.223.202
+135,100184,,Red /18.63 Gbps /  over 50.00 Mbps / max 18.63 Gbps,Recovered,11-01 03:1611-01 03:29,13:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+136,100183,,Yellow /704.20 Mbps /  over 200.00 Mbps / max 704.20 Mbps,Recovered,11-01 03:1011-01 03:13,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+137,100182,,Yellow /618.90 Mbps /  over 50.00 Mbps / max 618.90 Mbps,Recovered,11-01 03:1011-01 03:13,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+138,100181,,Yellow /691.49 Mbps /  over 200.00 Mbps / max 691.49 Mbps,Recovered,11-01 03:0511-01 03:08,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+139,100180,,Yellow /612.57 Mbps /  over 50.00 Mbps / max 612.57 Mbps,Recovered,11-01 03:0511-01 03:08,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+140,100179,,Yellow /695.07 Mbps /  over 200.00 Mbps / max 695.07 Mbps,Recovered,11-01 03:0011-01 03:03,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+141,100178,,Yellow /622.96 Mbps /  over 50.00 Mbps / max 622.96 Mbps,Recovered,11-01 03:0011-01 03:03,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+142,100177,,Yellow /650.23 Mbps /  over 200.00 Mbps / max 650.23 Mbps,Recovered,11-01 02:5511-01 02:58,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+143,100176,,Yellow /568.28 Mbps /  over 50.00 Mbps / max 568.28 Mbps,Recovered,11-01 02:5511-01 02:58,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+144,100175,,Yellow /785.72 Mbps /  over 200.00 Mbps / max 785.72 Mbps,Recovered,11-01 02:5011-01 02:53,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+145,100174,,Yellow /671.87 Mbps /  over 50.00 Mbps / max 671.87 Mbps,Recovered,11-01 02:5011-01 02:53,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+146,100173,,Yellow /707.14 Mbps /  over 200.00 Mbps / max 707.14 Mbps,Recovered,11-01 02:4511-01 02:48,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+147,100172,,Yellow /626.75 Mbps /  over 50.00 Mbps / max 626.75 Mbps,Recovered,11-01 02:4511-01 02:48,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+148,100171,,Yellow /698.84 Mbps /  over 200.00 Mbps / max 698.84 Mbps,Recovered,11-01 02:4011-01 02:43,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+149,100170,,Yellow /610.42 Mbps /  over 50.00 Mbps / max 610.42 Mbps,Recovered,11-01 02:4011-01 02:43,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+150,100169,,Yellow /714.52 Mbps /  over 200.00 Mbps / max 714.52 Mbps,Recovered,11-01 02:3511-01 02:38,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+151,100168,,Yellow /629.47 Mbps /  over 50.00 Mbps / max 629.47 Mbps,Recovered,11-01 02:3511-01 02:38,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+152,100167,,Yellow /727.50 Mbps /  over 200.00 Mbps / max 727.50 Mbps,Recovered,11-01 02:3011-01 02:33,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+153,100166,,Yellow /622.49 Mbps /  over 50.00 Mbps / max 622.49 Mbps,Recovered,11-01 02:3011-01 02:33,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+154,100165,,Yellow /694.03 Mbps /  over 200.00 Mbps / max 694.03 Mbps,Recovered,11-01 02:2511-01 02:28,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+155,100164,,Yellow /613.32 Mbps /  over 50.00 Mbps / max 613.32 Mbps,Recovered,11-01 02:2511-01 02:28,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+156,100163,,Yellow /750.12 Mbps /  over 200.00 Mbps / max 750.12 Mbps,Recovered,11-01 02:2011-01 02:23,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+157,100162,,Yellow /648.10 Mbps /  over 50.00 Mbps / max 648.10 Mbps,Recovered,11-01 02:2011-01 02:23,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+158,100161,,Yellow /674.86 Mbps /  over 200.00 Mbps / max 674.86 Mbps,Recovered,11-01 02:1511-01 02:18,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+159,100160,,Yellow /605.71 Mbps /  over 50.00 Mbps / max 605.71 Mbps,Recovered,11-01 02:1511-01 02:18,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+160,100159,,Yellow /631.71 Mbps /  over 200.00 Mbps / max 631.71 Mbps,Recovered,11-01 02:1011-01 02:13,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+161,100158,,Yellow /576.33 Mbps /  over 50.00 Mbps / max 576.33 Mbps,Recovered,11-01 02:1011-01 02:13,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+162,100157,,Yellow /614.16 Mbps /  over 200.00 Mbps / max 614.16 Mbps,Recovered,11-01 02:0511-01 02:08,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+163,100156,,Yellow /563.25 Mbps /  over 50.00 Mbps / max 563.25 Mbps,Recovered,11-01 02:0511-01 02:08,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+164,100155,,Yellow /441.49 Mbps /  over 200.00 Mbps / max 441.49 Mbps,Recovered,11-01 02:0011-01 02:03,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+165,100154,,Yellow /399.06 Mbps /  over 50.00 Mbps / max 399.06 Mbps,Recovered,11-01 02:0011-01 02:03,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+166,100153,,Yellow /642.98 Mbps /  over 200.00 Mbps / max 642.98 Mbps,Recovered,11-01 01:5511-01 01:58,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+167,100152,,Yellow /582.62 Mbps /  over 50.00 Mbps / max 582.62 Mbps,Recovered,11-01 01:5511-01 01:58,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+168,100151,,Red /2.14 Gbps /  over 1.00 Gbps / max 2.63 Gbps,Recovered,11-01 01:5311-01 01:57,04:00,To Non-Home,DDoS / Host TCP Traffic / bps,[Sub-Network] / CIT_Mingorispolkoma / 87.252.228.252
+169,100150,,Red /3.81 Mpps /  over 20.00 Kpps / max 4.69 Mpps,Recovered,11-01 01:5311-01 01:57,04:00,To Non-Home,DDoS / TCP SYN Flooding / TCP Sync pps,[Sub-Network] / CIT_Mingorispolkoma / 87.252.228.252
+170,100149,,Yellow /212.08 Kpps /  over 20.00 Kpps / max 212.08 Kpps,Recovered,11-01 01:5111-01 01:54,03:00,To Non-Home,DDoS / TCP RST Flooding / pps,[Sub-Network] / CIT_Mingorispolkoma / 87.252.228.253
+171,100148,,Yellow /645.52 Mbps /  over 200.00 Mbps / max 645.52 Mbps,Recovered,11-01 01:5011-01 01:53,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+172,100147,,Red /2.72 Gbps /  over 200.00 Mbps / max 7.04 Gbps,Recovered,11-01 01:5011-01 02:05,15:00,Incoming,Traffic Anomaly / bps,[Sub-Network] / CIT_Mingorispolkoma
+173,100146,,Yellow /587.26 Mbps /  over 50.00 Mbps / max 587.26 Mbps,Recovered,11-01 01:5011-01 01:53,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+174,100145,,Red /456.05 Kpps /  over 20.00 Kpps / max 4.74 Mpps,Recovered,11-01 01:4911-01 02:06,17:00,To Non-Home,DDoS / TCP SYN Flooding / TCP Sync pps,[Sub-Network] / CIT_Mingorispolkoma / 87.252.228.253
+175,100144,,Red /1.12 Mpps /  over 100.00 Kpps / max 4.30 Mpps,Recovered,11-01 01:4811-01 01:54,06:00,To Non-Home,DDoS / TCP ACK flooding / pps,[Sub-Network] / CIT_Mingorispolkoma / 87.252.228.253
+176,100143,,Red /1.86 Mpps /  over 100.00 Kpps / max 3.24 Mpps,Recovered,11-01 01:4811-01 01:52,04:00,To Non-Home,DDoS / TCP ACK flooding / pps,[Sub-Network] / CIT_Mingorispolkoma / 87.252.228.252
+177,100142,,Red /4.60 Gbps /  over 1.00 Gbps / max 8.04 Gbps,Recovered,11-01 01:4811-01 01:52,04:00,To Non-Home,DDoS / Host TCP Traffic / bps,[Sub-Network] / CIT_Mingorispolkoma / 87.252.228.252
+178,100141,,Red /4.50 Gbps /  over 1.00 Gbps / max 11.31 Gbps,Recovered,11-01 01:4811-01 02:03,15:00,To Non-Home,DDoS / Host TCP Traffic / bps,[Sub-Network] / CIT_Mingorispolkoma / 87.252.228.253
+179,100140,,Yellow /567.29 Mbps /  over 200.00 Mbps / max 567.29 Mbps,Recovered,11-01 01:4511-01 01:48,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+180,100139,,Yellow /523.20 Mbps /  over 50.00 Mbps / max 523.20 Mbps,Recovered,11-01 01:4511-01 01:48,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+181,100138,,Yellow /467.18 Mbps /  over 200.00 Mbps / max 467.18 Mbps,Recovered,11-01 01:4011-01 01:43,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+182,100137,,Yellow /423.32 Mbps /  over 50.00 Mbps / max 423.32 Mbps,Recovered,11-01 01:4011-01 01:43,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+183,100136,,Yellow /624.10 Mbps /  over 200.00 Mbps / max 624.10 Mbps,Recovered,11-01 01:3511-01 01:38,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+184,100135,,Yellow /564.24 Mbps /  over 50.00 Mbps / max 564.24 Mbps,Recovered,11-01 01:3511-01 01:38,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+185,100134,,Yellow /642.81 Mbps /  over 200.00 Mbps / max 642.81 Mbps,Recovered,11-01 01:3011-01 01:33,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+186,100133,,Yellow /582.42 Mbps /  over 50.00 Mbps / max 582.42 Mbps,Recovered,11-01 01:3011-01 01:33,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+187,100132,,Yellow /618.22 Mbps /  over 200.00 Mbps / max 618.22 Mbps,Recovered,11-01 01:2511-01 01:28,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+188,100131,,Yellow /553.50 Mbps /  over 50.00 Mbps / max 553.50 Mbps,Recovered,11-01 01:2511-01 01:28,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+189,100130,,Yellow /446.24 Mbps /  over 200.00 Mbps / max 446.24 Mbps,Recovered,11-01 01:2011-01 01:23,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+190,100129,,Yellow /408.92 Mbps /  over 50.00 Mbps / max 408.92 Mbps,Recovered,11-01 01:2011-01 01:23,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+191,100128,,Yellow /613.78 Mbps /  over 200.00 Mbps / max 613.78 Mbps,Recovered,11-01 01:1511-01 01:18,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+192,100127,,Yellow /562.44 Mbps /  over 50.00 Mbps / max 562.44 Mbps,Recovered,11-01 01:1511-01 01:18,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+193,100126,,Yellow /566.23 Mbps /  over 200.00 Mbps / max 566.23 Mbps,Recovered,11-01 01:1011-01 01:13,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+194,100125,,Yellow /508.59 Mbps /  over 50.00 Mbps / max 508.59 Mbps,Recovered,11-01 01:1011-01 01:13,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+195,100124,,Yellow /431.06 Mbps /  over 200.00 Mbps / max 431.06 Mbps,Recovered,11-01 01:0511-01 01:08,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+196,100123,,Yellow /394.50 Mbps /  over 50.00 Mbps / max 394.50 Mbps,Recovered,11-01 01:0511-01 01:08,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+197,100122,,Yellow /630.11 Mbps /  over 200.00 Mbps / max 630.11 Mbps,Recovered,11-01 01:0011-01 01:03,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+198,100121,,Yellow /568.60 Mbps /  over 50.00 Mbps / max 568.60 Mbps,Recovered,11-01 01:0011-01 01:03,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+199,100120,,Yellow /582.81 Mbps /  over 200.00 Mbps / max 582.81 Mbps,Recovered,11-01 00:5511-01 00:58,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+200,100119,,Yellow /528.13 Mbps /  over 50.00 Mbps / max 528.13 Mbps,Recovered,11-01 00:5511-01 00:58,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+201,100118,,Yellow /438.93 Mbps /  over 200.00 Mbps / max 438.93 Mbps,Recovered,11-01 00:5011-01 00:53,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+202,100117,,Yellow /404.67 Mbps /  over 50.00 Mbps / max 404.67 Mbps,Recovered,11-01 00:5011-01 00:53,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+203,100116,,Yellow /588.51 Mbps /  over 200.00 Mbps / max 588.51 Mbps,Recovered,11-01 00:4511-01 00:48,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+204,100115,,Yellow /522.22 Mbps /  over 50.00 Mbps / max 522.22 Mbps,Recovered,11-01 00:4511-01 00:48,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+205,100114,,Yellow /426.28 Mbps /  over 200.00 Mbps / max 426.28 Mbps,Recovered,11-01 00:4011-01 00:43,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+206,100113,,Yellow /388.96 Mbps /  over 50.00 Mbps / max 388.96 Mbps,Recovered,11-01 00:4011-01 00:43,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+207,100112,,Yellow /634.45 Mbps /  over 200.00 Mbps / max 634.45 Mbps,Recovered,11-01 00:3511-01 00:38,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+208,100111,,Yellow /579.25 Mbps /  over 50.00 Mbps / max 579.25 Mbps,Recovered,11-01 00:3511-01 00:38,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+209,100110,,Yellow /594.66 Mbps /  over 200.00 Mbps / max 594.66 Mbps,Recovered,11-01 00:3011-01 00:33,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+210,100109,,Yellow /535.45 Mbps /  over 50.00 Mbps / max 535.45 Mbps,Recovered,11-01 00:3011-01 00:33,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+211,100108,,Yellow /8.77 Kpps /  over 7.00 Kpps / max 8.77 Kpps,Recovered,10-31 22:5610-31 22:59,03:00,To Home,DDoS / TCP_PUSH / pps,[Sub-Network] / RCOD / 195.50.6.62
+212,100107,,Red /15.16 Gbps /  over 2.00 Gbps / max 25.95 Gbps,Recovered,10-31 22:4011-01 00:30,1:50:00,Incoming,Traffic Anomaly / bps,[Sub-Network] / IP Telcom
+213,100106,,Red /390.85 Kpps /  over 20.00 Kpps / max 470.42 Kpps,Recovered,10-31 22:3811-01 00:28,1:50:00,To Non-Home,DDoS / Malform UDP with port 0 / pps,[Sub-Network] / IP Telcom / 91.90.223.202
+214,100105,,Red /14.60 Gbps /  over 200.00 Mbps / max 25.82 Gbps,Recovered,10-31 22:3711-01 00:28,1:51:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+215,100104,,Red /8.67 Gbps /  over 50.00 Mbps / max 19.99 Gbps,Recovered,10-31 22:3711-01 00:28,1:51:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+216,100103,,Red /379.11 Mbps /  over 200.00 Mbps / max 519.57 Mbps,Recovered,10-31 22:3110-31 22:35,04:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+217,100102,,Red /327.79 Mbps /  over 50.00 Mbps / max 327.79 Mbps,Recovered,10-31 22:3110-31 22:35,04:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+218,100101,,Red /18.24 Gbps /  over 2.00 Gbps / max 19.80 Gbps,Recovered,10-31 22:1010-31 22:35,25:00,Incoming,Traffic Anomaly / bps,[Sub-Network] / IP Telcom
+219,100100,,Red /330.65 Kpps /  over 20.00 Kpps / max 561.45 Kpps,Recovered,10-31 22:1010-31 22:29,19:00,To Non-Home,DDoS / Malform UDP with port 0 / pps,[Sub-Network] / IP Telcom / 91.90.223.202
+220,100099,,Red /17.83 Gbps /  over 200.00 Mbps / max 21.37 Gbps,Recovered,10-31 22:0910-31 22:29,20:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+221,100098,,Red /12.36 Gbps /  over 50.00 Mbps / max 15.19 Gbps,Recovered,10-31 22:0910-31 22:29,20:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+222,100097,,Red /8.62 Kpps /  over 7.00 Kpps / max 10.47 Kpps,Recovered,10-31 22:0610-31 22:11,05:00,To Home,DDoS / TCP_PUSH / pps,[Sub-Network] / RCOD / 195.50.7.182
+223,100096,,Yellow /897.38 Mbps /  over 200.00 Mbps / max 897.38 Mbps,Recovered,10-31 22:0410-31 22:07,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+224,100095,,Yellow /653.01 Mbps /  over 50.00 Mbps / max 653.01 Mbps,Recovered,10-31 22:0410-31 22:07,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+225,100094,,Red /15.75 Gbps /  over 2.00 Gbps / max 15.75 Gbps,Recovered,10-31 21:5010-31 22:05,15:00,Incoming,Traffic Anomaly / bps,[Sub-Network] / IP Telcom
+226,100093,,Red /320.45 Kpps /  over 20.00 Kpps / max 426.63 Kpps,Recovered,10-31 21:5010-31 22:02,12:00,To Non-Home,DDoS / Malform UDP with port 0 / pps,[Sub-Network] / IP Telcom / 91.90.223.202
+227,100092,,Red /3.76 Gbps /  over 200.00 Mbps / max 22.46 Gbps,Recovered,10-31 21:4910-31 22:02,13:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+228,100091,,Red /8.00 Gbps /  over 50.00 Mbps / max 16.60 Gbps,Recovered,10-31 21:4910-31 22:02,13:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+229,100090,checked,Red /402.66 Mbps /  over 200.00 Mbps / max 402.66 Mbps,Recovered,10-31 21:4310-31 21:47,04:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+230,100089,checked,Red /370.59 Mbps /  over 50.00 Mbps / max 370.59 Mbps,Recovered,10-31 21:4310-31 21:47,04:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+231,100088,checked,Red /17.55 Gbps /  over 200.00 Mbps / max 22.97 Gbps,Recovered,10-31 21:1110-31 21:42,31:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+232,100087,checked,Red /317.72 Kpps /  over 20.00 Kpps / max 431.67 Kpps,Recovered,10-31 21:1110-31 21:41,30:00,To Non-Home,DDoS / Malform UDP with port 0 / pps,[Sub-Network] / IP Telcom / 91.90.223.202
+233,100086,checked,Red /12.76 Gbps /  over 50.00 Mbps / max 17.90 Gbps,Recovered,10-31 21:1110-31 21:42,31:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+234,100085,checked,Red /15.48 Gbps /  over 1.00 Gbps / max 16.50 Gbps,Recovered,10-31 21:0810-31 21:14,06:00,To Non-Home,DDoS / UDP Flooding / bps,[Home Scope] / Non-Home / 46.53.241.71
+235,100084,,Yellow /52.38 Kpps /  over 50.00 Kpps / max 53.55 Kpps,Recovered,10-31 21:0810-31 21:13,05:00,To Non-Home,DDoS / Malform UDP with port 0 / pps,[Home Scope] / Non-Home / 46.53.241.71
+236,100083,checked,Yellow /12.44 Gbps /  over 200.00 Mbps / max 12.44 Gbps,Recovered,10-31 21:0410-31 21:09,05:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+237,100082,checked,Yellow /367.07 Kpps /  over 20.00 Kpps / max 367.07 Kpps,Recovered,10-31 21:0410-31 21:09,05:00,To Non-Home,DDoS / Malform UDP with port 0 / pps,[Sub-Network] / IP Telcom / 91.90.223.202
+238,100081,checked,Yellow /6.80 Gbps /  over 50.00 Mbps / max 6.80 Gbps,Recovered,10-31 21:0410-31 21:09,05:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+239,100080,checked,Red /18.40 Gbps /  over 2.00 Gbps / max 18.47 Gbps,Recovered,10-31 20:4510-31 21:45,1:00:00,Incoming,Traffic Anomaly / bps,[Sub-Network] / IP Telcom
+240,100079,checked,Red /9.56 Gbps /  over 50.00 Mbps / max 16.80 Gbps,Recovered,10-31 20:4510-31 21:01,16:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+241,100078,checked,Red /14.26 Gbps /  over 200.00 Mbps / max 19.87 Gbps,Recovered,10-31 20:4410-31 21:01,17:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+242,100077,checked,Red /209.35 Kpps /  over 20.00 Kpps / max 357.27 Kpps,Recovered,10-31 20:4410-31 21:01,17:00,To Non-Home,DDoS / Malform UDP with port 0 / pps,[Sub-Network] / IP Telcom / 91.90.223.202
+243,100076,checked,Yellow /1.01 Gbps /  over 1.00 Gbps / max 1.01 Gbps,Recovered,10-31 20:4010-31 20:45,05:00,Incoming,Traffic Anomaly / bps,[Sub-Network] / x730
+244,100075,checked,Red /17.89 Gbps /  over 2.00 Gbps / max 20.70 Gbps,Recovered,10-31 19:5510-31 20:35,40:00,Incoming,Traffic Anomaly / bps,[Sub-Network] / IP Telcom
+245,100074,checked,Red /195.75 Kpps /  over 20.00 Kpps / max 237.57 Kpps,Recovered,10-31 19:5310-31 20:32,39:00,To Non-Home,DDoS / Malform UDP with port 0 / pps,[Sub-Network] / IP Telcom / 91.90.223.202
+246,100073,checked,Red /16.88 Gbps /  over 200.00 Mbps / max 20.75 Gbps,Recovered,10-31 19:5210-31 20:32,40:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+247,100072,checked,Red /13.78 Gbps /  over 50.00 Mbps / max 17.62 Gbps,Recovered,10-31 19:5210-31 20:32,40:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+248,100071,checked,Yellow /7.02 Kpps /  over 7.00 Kpps / max 7.02 Kpps,Recovered,10-31 19:4710-31 19:50,03:00,To Home,DDoS / TCP_PUSH / pps,[Sub-Network] / RCOD / 195.50.6.62
+249,100070,checked,Yellow /396.95 Mbps /  over 200.00 Mbps / max 396.95 Mbps,Recovered,10-31 19:4710-31 19:50,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+250,100069,checked,Yellow /395.92 Mbps /  over 50.00 Mbps / max 395.92 Mbps,Recovered,10-31 19:4710-31 19:50,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+251,100068,checked,Yellow /595.38 Mbps /  over 200.00 Mbps / max 595.38 Mbps,Recovered,10-31 19:4210-31 19:45,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+252,100067,checked,Yellow /593.71 Mbps /  over 50.00 Mbps / max 593.71 Mbps,Recovered,10-31 19:4210-31 19:45,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+253,100066,checked,Yellow /471.03 Mbps /  over 200.00 Mbps / max 471.03 Mbps,Recovered,10-31 19:3710-31 19:40,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+254,100065,checked,Yellow /468.79 Mbps /  over 50.00 Mbps / max 468.79 Mbps,Recovered,10-31 19:3710-31 19:40,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+255,100064,checked,Yellow /442.98 Mbps /  over 200.00 Mbps / max 442.98 Mbps,Recovered,10-31 19:3210-31 19:35,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+256,100063,checked,Yellow /441.15 Mbps /  over 50.00 Mbps / max 441.15 Mbps,Recovered,10-31 19:3210-31 19:35,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+257,100062,checked,Yellow /2.13 Gbps /  over 2.00 Gbps / max 2.13 Gbps,Recovered,10-31 19:2710-31 19:30,03:00,To Non-Home,DDoS / Host TCP Traffic / bps,[Home Scope] / Non-Home / 185.190.189.226
+258,100061,checked,Yellow /422.79 Mbps /  over 200.00 Mbps / max 422.79 Mbps,Recovered,10-31 19:2710-31 19:30,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+259,100060,checked,Red /422.02 Mbps /  over 50.00 Mbps / max 422.02 Mbps,Recovered,10-31 19:2610-31 19:30,04:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+260,100059,checked,Yellow /392.46 Mbps /  over 200.00 Mbps / max 392.46 Mbps,Recovered,10-31 19:2210-31 19:25,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+261,100058,checked,Red /391.50 Mbps /  over 50.00 Mbps / max 391.50 Mbps,Recovered,10-31 19:2110-31 19:25,04:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+262,100057,checked,Red /61.14 Mbps /  over 50.00 Mbps / max 364.37 Mbps,Recovered,10-31 19:1610-31 19:20,04:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+263,100056,checked,Yellow /76.27 Mbps /  over 50.00 Mbps / max 76.27 Mbps,Recovered,10-31 19:1210-31 19:15,03:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+264,100055,checked,Red /7.38 Kpps /  over 7.00 Kpps / max 9.38 Kpps,Recovered,10-31 19:0410-31 19:34,30:00,To Home,DDoS / TCP_PUSH / pps,[Sub-Network] / RCOD / 195.50.6.62
+265,100054,checked,Yellow /7.00 Kpps /  over 7.00 Kpps / max 7.23 Kpps,Recovered,10-31 18:5810-31 19:03,05:00,To Home,DDoS / TCP_PUSH / pps,[Sub-Network] / RCOD / 195.50.6.62
+266,100053,checked,Yellow /7.70 Kpps /  over 7.00 Kpps / max 7.70 Kpps,Recovered,10-31 18:5210-31 18:55,03:00,To Home,DDoS / TCP_PUSH / pps,[Sub-Network] / RCOD / 195.50.6.62
+267,100052,checked,Yellow /593.64 Mbps /  over 300.00 Mbps / max 593.64 Mbps,Recovered,10-31 17:0610-31 17:09,03:00,To Non-Home,DDoS / Host TCP Traffic / bps,[Sub-Network] / ActiveHost / 193.176.180.67
+268,100051,checked,Yellow /455.09 Mbps /  over 300.00 Mbps / max 549.42 Mbps,Recovered,10-31 17:0510-31 17:10,05:00,To Non-Home,DDoS / Host TCP Traffic / bps,[Sub-Network] / ActiveHost / 193.176.180.66
+269,100050,checked,Yellow /398.40 Mbps /  over 300.00 Mbps / max 398.40 Mbps,Recovered,10-31 17:0010-31 17:03,03:00,To Non-Home,DDoS / Host TCP Traffic / bps,[Sub-Network] / ActiveHost / 193.176.180.66
+270,100049,checked,Red /313.70 Mbps /  over 300.00 Mbps / max 649.60 Mbps,Recovered,10-31 16:5910-31 17:03,04:00,To Non-Home,DDoS / Host TCP Traffic / bps,[Sub-Network] / ActiveHost / 193.176.180.67
+271,100048,checked,Red /99.42 Mbps /  over 50.00 Mbps / max 116.24 Mbps,Recovered,10-31 15:5910-31 16:05,06:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+272,100047,checked,Yellow /638.80 Mbps /  over 200.00 Mbps / max 638.80 Mbps,Recovered,10-31 15:5210-31 15:55,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+273,100046,checked,Yellow /527.17 Mbps /  over 200.00 Mbps / max 527.17 Mbps,Recovered,10-31 15:4710-31 15:50,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+274,100045,checked,Yellow /405.55 Mbps /  over 200.00 Mbps / max 405.55 Mbps,Recovered,10-31 15:4210-31 15:45,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+275,100044,checked,Yellow /620.48 Mbps /  over 200.00 Mbps / max 620.48 Mbps,Recovered,10-31 15:3710-31 15:40,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+276,100043,checked,Yellow /588.20 Mbps /  over 200.00 Mbps / max 588.20 Mbps,Recovered,10-31 15:3210-31 15:35,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+277,100042,checked,Yellow /565.64 Mbps /  over 200.00 Mbps / max 565.64 Mbps,Recovered,10-31 15:2710-31 15:30,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+278,100041,checked,Yellow /425.51 Mbps /  over 200.00 Mbps / max 425.51 Mbps,Recovered,10-31 15:2210-31 15:25,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+279,100040,checked,Yellow /589.28 Mbps /  over 200.00 Mbps / max 589.28 Mbps,Recovered,10-31 15:1710-31 15:20,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+280,100039,checked,Yellow /651.96 Mbps /  over 200.00 Mbps / max 651.96 Mbps,Recovered,10-31 15:1210-31 15:15,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+281,100038,checked,Yellow /650.11 Mbps /  over 200.00 Mbps / max 650.11 Mbps,Recovered,10-31 15:0710-31 15:10,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+282,100037,checked,Yellow /452.45 Mbps /  over 200.00 Mbps / max 452.45 Mbps,Recovered,10-31 15:0210-31 15:05,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+283,100036,checked,Yellow /424.77 Mbps /  over 200.00 Mbps / max 424.77 Mbps,Recovered,10-31 14:5710-31 15:00,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+284,100035,checked,Yellow /566.24 Mbps /  over 200.00 Mbps / max 566.24 Mbps,Recovered,10-31 14:5210-31 14:55,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+285,100034,checked,Yellow /543.46 Mbps /  over 200.00 Mbps / max 543.46 Mbps,Recovered,10-31 14:4710-31 14:50,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+286,100033,checked,Yellow /580.33 Mbps /  over 200.00 Mbps / max 580.33 Mbps,Recovered,10-31 14:4210-31 14:45,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+287,100032,checked,Yellow /611.35 Mbps /  over 200.00 Mbps / max 611.35 Mbps,Recovered,10-31 14:3710-31 14:40,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+288,100031,checked,Yellow /683.61 Mbps /  over 200.00 Mbps / max 683.61 Mbps,Recovered,10-31 14:3210-31 14:35,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+289,100030,checked,Yellow /697.29 Mbps /  over 200.00 Mbps / max 697.29 Mbps,Recovered,10-31 14:2710-31 14:30,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+290,100029,checked,Yellow /688.73 Mbps /  over 200.00 Mbps / max 688.73 Mbps,Recovered,10-31 14:2210-31 14:25,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+291,100028,checked,Yellow /686.66 Mbps /  over 200.00 Mbps / max 686.66 Mbps,Recovered,10-31 14:1710-31 14:20,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+292,100027,checked,Yellow /678.34 Mbps /  over 200.00 Mbps / max 678.34 Mbps,Recovered,10-31 14:1210-31 14:15,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+293,100026,checked,Red /253.76 Mbps /  over 200.00 Mbps / max 253.76 Mbps,Recovered,10-31 14:0810-31 14:12,04:00,To Non-Home,DDoS / Host TCP Traffic / bps,[Sub-Network] / IP Telcom / 79.98.51.244
+294,100025,checked,Yellow /685.21 Mbps /  over 200.00 Mbps / max 685.21 Mbps,Recovered,10-31 14:0710-31 14:10,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+295,100024,checked,Yellow /694.87 Mbps /  over 200.00 Mbps / max 694.87 Mbps,Recovered,10-31 14:0210-31 14:05,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+296,100023,checked,Yellow /559.36 Mbps /  over 200.00 Mbps / max 559.36 Mbps,Recovered,10-31 13:5710-31 14:00,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+297,100022,checked,Yellow /651.27 Mbps /  over 200.00 Mbps / max 651.27 Mbps,Recovered,10-31 13:5210-31 13:55,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+298,100021,checked,Yellow /1.39 Gbps /  over 200.00 Mbps / max 1.39 Gbps,Recovered,10-31 13:4710-31 13:50,03:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+299,100020,checked,Yellow /406.10 Kpps /  over 5.00 Kpps / max 406.10 Kpps,Recovered,10-31 13:4610-31 13:49,03:00,To Non-Home,DDoS / DNS Flooding / pps,[Sub-Network] / IP Telcom / 91.90.223.202
+300,100019,checked,Red /275.90 Kpps /  over 10.00 Kpps / max 275.90 Kpps,Recovered,10-31 13:4410-31 13:48,04:00,To Non-Home,DDoS / TCP RST Flooding / pps,[Sub-Network] / IP Telcom / 91.90.223.202
+301,100018,checked,Yellow /5.20 Kpps /  over 5.00 Kpps / max 5.20 Kpps,Recovered,10-31 13:4310-31 13:46,03:00,To Non-Home,DDoS / TCP SYN-ACK flooding / pps,[Sub-Network] / IP Telcom / 91.90.223.202
+302,100017,checked,Red /411.47 Kpps /  over 50.00 Kpps / max 411.47 Kpps,Recovered,10-31 13:4010-31 13:44,04:00,To Non-Home,DDoS / TCP ACK flooding / pps,[Sub-Network] / IP Telcom / 91.90.223.202
+303,100016,checked,Yellow /1.04 Gbps /  over 1.00 Gbps / max 1.04 Gbps,Recovered,10-31 13:0010-31 13:05,05:00,Incoming,Traffic Anomaly / bps,[Sub-Network] / RCOD
+304,100015,checked,Red /228.67 Mbps /  over 200.00 Mbps / max 260.83 Mbps,Recovered,10-31 12:5610-31 13:34,38:00,To Non-Home,DDoS / Host TCP Traffic / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+305,100014,checked,Red /1.16 Gbps /  over 1.00 Gbps / max 1.22 Gbps,Recovered,10-31 12:5510-31 13:01,06:00,To Home,DDoS / UDP Flooding / bps,[Sub-Network] / BeCloud_AS60330 / 195.50.6.65
+306,100013,checked,Red /71.80 Kpps /  over 20.00 Kpps / max 75.00 Kpps,Recovered,10-31 12:5510-31 13:02,07:00,To Home,DDoS / Malform UDP with port 0 / pps,[Sub-Network] / RCOD / 195.50.6.65
+307,100012,checked,Red /71.80 Kpps /  over 20.00 Kpps / max 75.00 Kpps,Recovered,10-31 12:5510-31 13:02,07:00,To Home,DDoS / Malform UDP with port 0 / pps,[Sub-Network] / BeCloud_AS60330 / 195.50.6.65
+308,100011,checked,Red /1.16 Gbps /  over 200.00 Mbps / max 1.22 Gbps,Recovered,10-31 12:5510-31 13:02,07:00,To Home,DDoS / UDP Flooding / bps,[Sub-Network] / RCOD / 195.50.6.65
+309,100010,checked,Yellow /200.71 Mbps /  over 200.00 Mbps / max 200.71 Mbps,Recovered,10-31 12:5010-31 12:53,03:00,To Non-Home,DDoS / Host TCP Traffic / bps,[Sub-Network] / IP Telcom / 91.90.223.202
+310,100009,checked,Red /7.37 Kpps /  over 5.00 Kpps / max 11.92 Kpps,Recovered,10-31 12:5010-31 13:38,48:00,To Non-Home,DDoS / ICMP Misuse / pps,[Sub-Network] / IP Telcom / 91.90.223.202
+311,100008,checked,Red /415.87 Kpps /  over 50.00 Kpps / max 543.35 Kpps,Recovered,10-31 12:5010-31 13:48,58:00,To Non-Home,DDoS / HTTPS Flooding / pps,[Sub-Network] / IP Telcom / 91.90.223.202
+312,100007,checked,Red /401.72 Kpps /  over 10.00 Kpps / max 523.33 Kpps,Recovered,10-31 12:5010-31 13:39,49:00,To Non-Home,DDoS / TCP SYN Flooding / TCP Sync pps,[Sub-Network] / IP Telcom / 91.90.223.202
+313,100006,checked,Red /14.08 Kpps /  over 10.00 Kpps / max 20.00 Kpps,Recovered,10-31 12:5010-31 13:38,48:00,To Non-Home,DDoS / TCP RST Flooding / pps,[Sub-Network] / IP Telcom / 91.90.223.202
+314,100005,checked,Yellow /527.78 Mbps /  over 500.00 Mbps / max 527.78 Mbps,Recovered,10-31 12:2910-31 12:32,03:00,To Home,DDoS / Host TCP Traffic / bps,[Sub-Network] / RCOD / 195.50.6.62
+315,100004,checked,Yellow /3.60 Gbps /  over 200.00 Mbps / max 3.60 Gbps,Recovered,10-31 09:3010-31 09:35,05:00,Incoming,Traffic Anomaly / bps,[Sub-Network] / CIT_Mingorispolkoma
+316,100003,checked,Yellow /1.74 Mpps /  over 50.00 Kpps / max 1.74 Mpps,Recovered,10-31 09:2410-31 09:27,03:00,To Non-Home,DDoS / TCP SYN Flooding / TCP Sync pps,[Home Scope] / Non-Home / 91.90.223.202
+317,100002,checked,Yellow /2.03 Gbps /  over 2.00 Gbps / max 2.03 Gbps,Recovered,10-31 06:5210-31 06:55,03:00,To Non-Home,DDoS / Host TCP Traffic / bps,[Home Scope] / Non-Home / 185.190.189.202
+318,100001,checked,Red /8.02 Kpps /  over 7.00 Kpps / max 8.02 Kpps,Recovered,10-31 00:0610-31 00:10,04:00,To Home,DDoS / TCP_PUSH / pps,[Sub-Network] / RCOD / 195.50.7.182
+319,100000,checked,Red /8.37 Kpps /  over 7.00 Kpps / max 8.80 Kpps,Recovered,10-30 22:0510-30 22:10,05:00,To Home,DDoS / TCP_PUSH / pps,[Sub-Network] / RCOD / 195.50.7.182
+320,99999,checked,Red /1.56 Gbps /  over 1.00 Gbps / max 1.80 Gbps,Recovered,10-30 20:4310-30 20:52,09:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / CosmosTV / 87.252.225.105
+321,99998,checked,Yellow /1.07 Gbps /  over 1.00 Gbps / max 1.07 Gbps,Recovered,10-30 20:4010-30 20:45,05:00,Incoming,Traffic Anomaly / bps,[Sub-Network] / x730
+322,99997,checked,Red /52.73 Kpps /  over 50.00 Kpps / max 54.95 Kpps,Recovered,10-30 20:3510-30 20:41,06:00,To Non-Home,DDoS / Malform UDP with port 0 / pps,[Home Scope] / Non-Home / 46.53.245.52
+323,99996,checked,Red /441.67 Kpps /  over 20.00 Kpps / max 447.43 Kpps,Recovered,10-30 20:1310-30 20:23,10:00,To Non-Home,DDoS / Malform UDP with port 0 / pps,[Sub-Network] / CosmosTV / 87.252.225.105
+324,99995,checked,Red /6.91 Gbps /  over 1.00 Gbps / max 7.02 Gbps,Recovered,10-30 20:1310-30 20:23,10:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / CosmosTV / 87.252.225.105
+325,99994,,Red /54.60 Kpps /  over 20.00 Kpps / max 55.77 Kpps,Recovered,10-30 20:1010-30 20:16,06:00,To Non-Home,DDoS / Malform UDP with port 0 / pps,[Sub-Network] / CosmosTV / 87.252.225.96
+326,99993,,Red /1.56 Gbps /  over 1.00 Gbps / max 1.56 Gbps,Recovered,10-30 20:1010-30 20:14,04:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / CosmosTV / 87.252.225.96
+327,99992,checked,Red /1.46 Mpps /  over 20.00 Kpps / max 2.38 Mpps,Recovered,10-30 17:2610-30 17:49,23:00,To Non-Home,DDoS / Malform UDP with port 0 / pps,[Sub-Network] / MTS_CLIENT_AS_25106 / 46.56.92.63
+328,99991,checked,Red /26.25 Gbps /  over 1.00 Gbps / max 38.00 Gbps,Recovered,10-30 17:2610-30 17:49,23:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / MTS_CLIENT_AS_25106 / 46.56.92.63
+329,99990,checked,Yellow /1.03 Gbps /  over 1.00 Gbps / max 1.03 Gbps,Recovered,10-30 16:3410-30 16:39,05:00,To Non-Home,DDoS / UDP Flooding / bps,[Home Scope] / Non-Home / 46.175.170.110
+330,99989,checked,Red /62.58 Kpps /  over 50.00 Kpps / max 62.58 Kpps,Recovered,10-30 16:3310-30 16:39,06:00,To Non-Home,DDoS / Malform UDP with port 0 / pps,[Home Scope] / Non-Home / 46.175.170.110
+331,99988,checked,Yellow /4.61 Gbps /  over 2.00 Gbps / max 4.61 Gbps,Recovered,10-30 14:4010-30 14:45,05:00,Incoming,Traffic Anomaly / bps,[Sub-Network] / BeCloud_AS60330
+332,99987,checked,Yellow /3.80 Gbps /  over 1.00 Gbps / max 3.80 Gbps,Recovered,10-30 14:4010-30 14:45,05:00,Incoming,Traffic Anomaly / bps,[Sub-Network] / RCOD
+333,99986,checked,Red /105.48 Kpps /  over 20.00 Kpps / max 160.32 Kpps,Recovered,10-30 14:3810-30 14:49,11:00,To Home,DDoS / TCP SYN Flooding / TCP Sync pps,[Sub-Network] / BeCloud_AS60330 / 93.125.22.27
+334,99985,checked,Red /105.48 Kpps /  over 5.00 Kpps / max 160.32 Kpps,Recovered,10-30 14:3810-30 14:49,11:00,To Home,DDoS / TCP SYN Flooding / TCP Sync pps,[Sub-Network] / RCOD / 93.125.22.27
+335,99984,checked,Red /105.98 Kpps /  over 70.00 Kpps / max 162.55 Kpps,Recovered,10-30 14:3810-30 14:49,11:00,To Home,DDoS / HTTPS Flooding / pps,[Sub-Network] / RCOD / 93.125.22.27
+336,99983,checked,Red /105.98 Kpps /  over 50.00 Kpps / max 162.55 Kpps,Recovered,10-30 14:3810-30 14:49,11:00,To Home,DDoS / HTTPS Flooding / pps,[Sub-Network] / BeCloud_AS60330 / 93.125.22.27
+337,99982,checked,Red /176.55 Kpps /  over 20.00 Kpps / max 195.82 Kpps,Recovered,10-30 14:3710-30 14:43,06:00,To Home,DDoS / Malform UDP with port 0 / pps,[Sub-Network] / RCOD / 93.125.22.27
+338,99981,checked,Red /4.34 Gbps /  over 1.00 Gbps / max 5.11 Gbps,Recovered,10-30 14:3710-30 14:43,06:00,To Home,DDoS / UDP Flooding / bps,[Sub-Network] / BeCloud_AS60330 / 93.125.22.27
+339,99980,checked,Red /176.55 Kpps /  over 20.00 Kpps / max 195.82 Kpps,Recovered,10-30 14:3710-30 14:43,06:00,To Home,DDoS / Malform UDP with port 0 / pps,[Sub-Network] / BeCloud_AS60330 / 93.125.22.27
+340,99979,checked,Red /4.34 Gbps /  over 200.00 Mbps / max 5.11 Gbps,Recovered,10-30 14:3710-30 14:54,17:00,To Home,DDoS / UDP Flooding / bps,[Sub-Network] / RCOD / 93.125.22.27
+341,99978,checked,Yellow /1.30 Mpps /  over 1.20 Mpps / max 1.30 Mpps,Recovered,10-30 13:5610-30 13:59,03:00,To Non-Home,DDoS / TCP ACK flooding / pps,[Home Scope] / Non-Home / 149.154.167.151
+342,99977,checked,Red /36.47 Kpps /  over 25.00 Kpps / max 36.47 Kpps,Recovered,10-30 13:1710-30 13:21,04:00,To Home,DDoS / HTTP Flooding / pps,[Sub-Network] / RCOD / 195.50.6.39
+343,99976,checked,Yellow /34.42 Kpps /  over 25.00 Kpps / max 34.42 Kpps,Recovered,10-30 13:0210-30 13:05,03:00,To Home,DDoS / HTTP Flooding / pps,[Sub-Network] / RCOD / 195.50.6.39
+344,99975,checked,Yellow /2.05 Gbps /  over 2.00 Gbps / max 2.05 Gbps,Recovered,10-30 10:1710-30 10:20,03:00,To Non-Home,DDoS / Host TCP Traffic / bps,[Home Scope] / Non-Home / 185.190.189.202
+345,99974,checked,Red /54.85 Kpps /  over 50.00 Kpps / max 54.85 Kpps,Recovered,10-30 04:5310-30 04:59,06:00,To Non-Home,DDoS / Malform UDP with port 0 / pps,[Home Scope] / Non-Home / 46.53.241.190
+346,99973,checked,Yellow /57.28 Kpps /  over 50.00 Kpps / max 57.28 Kpps,Recovered,10-30 03:3210-30 03:35,03:00,To Non-Home,DDoS / Malform UDP with port 0 / pps,[Home Scope] / Non-Home / 46.53.242.20
+347,99972,checked,Red /408.47 Mbps /  over 400.00 Mbps / max 423.32 Mbps,Recovered,10-30 02:4510-30 02:50,05:00,To Non-Home,DDoS / GRE_Flood / bps,[Sub-Network] / MTS_CLIENT_AS_25106 / 178.168.208.53
+348,99971,checked,Red /285.38 Mbps /  over 200.00 Mbps / max 8.69 Gbps,Recovered,10-30 00:1010-30 00:20,10:00,Incoming,Traffic Anomaly / bps,[Sub-Network] / CIT_Mingorispolkoma
+349,99970,checked,Red /94.70 Kpps /  over 50.00 Kpps / max 1.30 Mpps,Recovered,10-30 00:0910-30 00:13,04:00,To Non-Home,DDoS / HTTPS Flooding / pps,[Sub-Network] / CIT_Mingorispolkoma / 87.252.228.253
+350,99969,checked,Red /3.40 Gbps /  over 1.00 Gbps / max 21.76 Gbps,Recovered,10-30 00:0910-30 00:13,04:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / CIT_Mingorispolkoma / 87.252.228.253
+351,99968,checked,Red /231.90 Kpps /  over 20.00 Kpps / max 327.98 Kpps,Recovered,10-30 00:0810-30 00:12,04:00,To Non-Home,DDoS / TCP RST Flooding / pps,[Sub-Network] / CIT_Mingorispolkoma / 87.252.228.253
+352,99967,checked,Yellow /1.16 Gbps /  over 1.00 Gbps / max 1.16 Gbps,Recovered,10-30 00:0810-30 00:11,03:00,To Non-Home,DDoS / Host TCP Traffic / bps,[Sub-Network] / CIT_Mingorispolkoma / 87.252.228.253
+353,99966,checked,Red /1.07 Mpps /  over 20.00 Kpps / max 1.69 Mpps,Recovered,10-30 00:0810-30 00:14,06:00,To Non-Home,DDoS / TCP SYN Flooding / TCP Sync pps,[Sub-Network] / CIT_Mingorispolkoma / 87.252.228.253
+354,99965,checked,Red /8.87 Kpps /  over 7.00 Kpps / max 8.87 Kpps,Recovered,10-30 00:0710-30 00:11,04:00,To Home,DDoS / TCP_PUSH / pps,[Sub-Network] / RCOD / 195.50.7.182
+355,99964,checked,Red /8.10 Kpps /  over 7.00 Kpps / max 10.72 Kpps,Recovered,10-29 22:0610-29 22:11,05:00,To Home,DDoS / TCP_PUSH / pps,[Sub-Network] / RCOD / 195.50.7.182
+356,99963,,Red /1.13 Gbps /  over 1.00 Gbps / max 1.13 Gbps,Recovered,10-29 21:4010-29 22:05,25:00,Incoming,Traffic Anomaly / bps,[Sub-Network] / x730
+357,99962,,Red /29.20 Kpps /  over 20.00 Kpps / max 37.57 Kpps,Recovered,10-29 20:2310-29 21:45,1:22:00,To Non-Home,DDoS / ICMP Misuse / pps,[Sub-Network] / CIT_Mingorispolkoma / 87.252.228.252
+358,99961,,Red /55.58 Kpps /  over 20.00 Kpps / max 63.25 Kpps,Recovered,10-29 20:2210-29 21:45,1:23:00,To Non-Home,DDoS / TCP RST Flooding / pps,[Sub-Network] / CIT_Mingorispolkoma / 87.252.228.252
+359,99960,,Red /9.48 Kpps /  over 7.00 Kpps / max 10.20 Kpps,Recovered,10-29 18:2910-29 18:36,07:00,To Home,DDoS / TCP_PUSH / pps,[Sub-Network] / RCOD / 195.50.6.62
+360,99959,,Yellow /8.93 Kpps /  over 7.00 Kpps / max 8.93 Kpps,Recovered,10-29 18:0610-29 18:09,03:00,To Home,DDoS / TCP_PUSH / pps,[Sub-Network] / RCOD / 195.50.6.62
+361,99958,,Yellow /7.73 Kpps /  over 7.00 Kpps / max 7.73 Kpps,Recovered,10-29 17:4810-29 17:51,03:00,To Home,DDoS / TCP_PUSH / pps,[Sub-Network] / RCOD / 195.50.6.62
+362,99957,,Red /9.22 Kpps /  over 7.00 Kpps / max 15.60 Kpps,Recovered,10-29 17:2510-29 17:43,18:00,To Home,DDoS / TCP_PUSH / pps,[Sub-Network] / RCOD / 195.50.6.62
+363,99956,checked,Red /2.10 Gbps /  over 1.00 Gbps / max 2.36 Gbps,Recovered,10-29 16:2610-29 21:45,5:19:00,To Non-Home,DDoS / Host TCP Traffic / bps,[Sub-Network] / CIT_Mingorispolkoma / 87.252.228.252
+364,99955,checked,Red /1.61 Mpps /  over 100.00 Kpps / max 2.21 Mpps,Recovered,10-29 16:2510-29 21:45,5:20:00,To Non-Home,DDoS / TCP ACK flooding / pps,[Sub-Network] / CIT_Mingorispolkoma / 87.252.228.252
+365,99954,checked,Red /1.94 Mpps /  over 20.00 Kpps / max 2.07 Mpps,Recovered,10-29 16:2510-29 21:45,5:20:00,To Non-Home,DDoS / TCP SYN Flooding / TCP Sync pps,[Sub-Network] / CIT_Mingorispolkoma / 87.252.228.252
+366,99953,checked,Yellow /218.12 Kpps /  over 20.00 Kpps / max 218.12 Kpps,Recovered,10-29 16:2410-29 16:27,03:00,To Non-Home,DDoS / Malform UDP with port 0 / pps,[Sub-Network] / CIT_Mingorispolkoma / 87.252.228.252
+367,99952,checked,Red /18.78 Gbps /  over 800.00 Mbps / max 19.72 Gbps,Recovered,10-29 16:1910-29 16:27,08:00,To Non-Home,DDoS / NTP Flooding / bps,[Sub-Network] / CIT_Mingorispolkoma / 87.252.228.252
+368,99951,checked,Yellow /1.93 Mpps /  over 20.00 Kpps / max 1.93 Mpps,Recovered,10-29 16:1810-29 16:21,03:00,To Non-Home,DDoS / Malform UDP with port 0 / pps,[Sub-Network] / CIT_Mingorispolkoma / 87.252.228.252
+369,99950,checked,Red /19.72 Gbps /  over 1.00 Gbps / max 24.87 Gbps,Recovered,10-29 16:1810-29 16:27,09:00,To Non-Home,DDoS / UDP Flooding / bps,[Sub-Network] / CIT_Mingorispolkoma / 87.252.228.252
+370,99949,checked,Red /1.87 Gbps /  over 1.00 Gbps / max 1.95 Gbps,Recovered,10-29 16:0610-29 16:19,13:00,To Non-Home,DDoS / Host TCP Traffic / bps,[Sub-Network] / CIT_Mingorispolkoma / 87.252.228.252
+371,99948,checked,Red /805.99 Mbps /  over 200.00 Mbps / max 13.98 Gbps,Recovered,10-29 16:0010-29 21:50,5:50:00,Incoming,Traffic Anomaly / bps,[Sub-Network] / CIT_Mingorispolkoma
+372,99947,checked,Red /39.87 Kpps /  over 20.00 Kpps / max 39.87 Kpps,Recovered,10-29 15:5910-29 16:05,06:00,To Non-Home,DDoS / TCP RST Flooding / pps,[Sub-Network] / CIT_Mingorispolkoma / 87.252.228.252
+373,99946,checked,Red /1.91 Gbps /  over 1.00 Gbps / max 1.93 Gbps,Recovered,10-29 15:5810-29 16:05,07:00,To Non-Home,DDoS / Host TCP Traffic / bps,[Sub-Network] / CIT_Mingorispolkoma / 87.252.228.252
+374,99945,checked,Red /3.16 Mpps /  over 20.00 Kpps / max 3.28 Mpps,Recovered,10-29 15:5710-29 16:19,22:00,To Non-Home,DDoS / TCP SYN Flooding / TCP Sync pps,[Sub-Network] / CIT_Mingorispolkoma / 87.252.228.252
+375,99944,,Red /11.18 Kpps /  over 7.00 Kpps / max 12.53 Kpps,Recovered,10-29 14:3410-29 14:55,21:00,To Home,DDoS / TCP_PUSH / pps,[Sub-Network] / RCOD / 195.50.6.62
+376,99943,checked,Red /10.03 Kpps /  over 7.00 Kpps / max 10.03 Kpps,Recovered,10-29 14:2310-29 14:29,06:00,To Home,DDoS / TCP_PUSH / pps,[Sub-Network] / RCOD / 195.50.6.62
+377,99942,checked,Red /8.55 Kpps /  over 7.00 Kpps / max 14.55 Kpps,Recovered,10-29 13:4610-29 14:10,24:00,To Home,DDoS / TCP_PUSH / pps,[Sub-Network] / RCOD / 195.50.6.62
+378,99941,checked,Red /10.67 Kpps /  over 7.00 Kpps / max 13.55 Kpps,Recovered,10-29 13:3310-29 13:40,07:00,To Home,DDoS / TCP_PUSH / pps,[Sub-Network] / RCOD / 195.50.6.62
+379,99940,checked,Red /37.88 Kpps /  over 25.00 Kpps / max 37.88 Kpps,Recovered,10-29 13:1710-29 13:23,06:00,To Home,DDoS / HTTP Flooding / pps,[Sub-Network] / RCOD / 195.50.6.39
+380,99939,checked,Red /7.80 Kpps /  over 7.00 Kpps / max 15.48 Kpps,Recovered,10-29 13:1210-29 13:31,19:00,To Home,DDoS / TCP_PUSH / pps,[Sub-Network] / RCOD / 195.50.6.62
+381,99938,checked,Red /33.42 Kpps /  over 25.00 Kpps / max 38.00 Kpps,Recovered,10-29 13:0210-29 13:06,04:00,To Home,DDoS / HTTP Flooding / pps,[Sub-Network] / RCOD / 195.50.6.39
+382,99937,checked,Yellow /8.77 Kpps /  over 7.00 Kpps / max 8.77 Kpps,Recovered,10-29 13:0010-29 13:06,06:00,To Home,DDoS / TCP_PUSH / pps,[Sub-Network] / RCOD / 195.50.6.62
+383,99936,checked,Red /2.97 Gbps /  over 200.00 Mbps / max 3.04 Gbps,Recovered,10-29 12:2510-29 12:50,25:00,Incoming,Traffic Anomaly / bps,[Sub-Network] / CIT_Mingorispolkoma
+384,99935,checked,Red /1.64 Mpps /  over 100.00 Kpps / max 1.78 Mpps,Recovered,10-29 12:2210-29 12:48,26:00,To Non-Home,DDoS / TCP ACK flooding / pps,[Sub-Network] / CIT_Mingorispolkoma / 87.252.228.196
+385,99934,checked,Red /2.00 Mpps /  over 20.00 Kpps / max 2.03 Mpps,Recovered,10-29 12:2210-29 12:48,26:00,To Non-Home,DDoS / TCP SYN Flooding / TCP Sync pps,[Sub-Network] / CIT_Mingorispolkoma / 87.252.228.196
+386,99933,checked,Red /2.16 Gbps /  over 1.00 Gbps / max 2.21 Gbps,Recovered,10-29 12:2210-29 12:48,26:00,To Non-Home,DDoS / Host TCP Traffic / bps,[Sub-Network] / CIT_Mingorispolkoma / 87.252.228.196
