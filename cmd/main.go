@@ -4,7 +4,7 @@ import (
 	"flag"
 	"fmt"
 
-	"github.com/ArtZhiv/sql_test/pkg/repository"
+	"github.com/artzhiv/sql_test/pkg/repository"
 	_ "github.com/go-sql-driver/mysql"
 )
 
@@ -88,7 +88,7 @@ func main() {
 		}
 	case vvod == 666:
 		// handler.OpenTestConnect()
-		repository.dirByName()
+		// repository.dirByName()
 	case vvod == 0:
 		break
 	}
