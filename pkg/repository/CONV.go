@@ -25,7 +25,6 @@ type enb2 struct {
 
 // Convert ...
 func Convert(a string) {
-
 	// Перевод для номера eNodeB
 	c := a[5:10]
 	ii, _ := strconv.ParseInt(c, 16, 64)

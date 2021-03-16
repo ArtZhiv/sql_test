@@ -570,16 +570,17 @@ func FindMTSforText(elem string) {
 		products = append(products, p)
 	}
 	if len(products) == 0 {
-		dt := time.Now()
-		d := dt.Format("02.01.2006")
-		fmt.Println("на", d, "eNodeB", elem, "не в коммерции")
+		// dt := time.Now()
+		// d := dt.Format("02.01.2006")
+		// fmt.Println("на", d, "eNodeB", elem, "не в коммерции")
 	} else {
 		for _, p := range products {
 			if p.demolition != "NULL" {
-				fmt.Println("+ -------------- + ---------- +")
-				fmt.Println("| ДЕМОНТИРОВАНА--|--", p.number, "--|--", p.demolition, "--|")
-				fmt.Println("+ -------------- + ---------- +")
-				fmt.Println()
+				// fmt.Println("+ -------------- + ---------- +")
+				// fmt.Println("| ДЕМОНТИРОВАНА--|--", p.number, "--|--", p.demolition, "--|")
+				// fmt.Println("+ -------------- + ---------- +")
+				// fmt.Println()
+				continue
 			} else {
 				fmt.Println(p.number, p.address)
 			}

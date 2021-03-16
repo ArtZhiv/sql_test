@@ -27,3 +27,11 @@ CREATE TABLE sector
     PRIMARY KEY(id)
 );
 
+CREATE TABLE usersTable (
+        id         INT          NOT NULL AUTO_INCREMENT,
+        Username   VARCHAR(50)  NOT NULL,
+        Firstname   VARCHAR(50)  NOT NULL,
+        Lastname   VARCHAR(50)  NOT NULL,
+        Middlename   VARCHAR(50)  NOT NULL,
+        PRIMARY KEY(id)
+  );

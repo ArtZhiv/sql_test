@@ -3,6 +3,7 @@ package main
 import (
 	"flag"
 	"fmt"
+	"os"
 
 	"github.com/artzhiv/sql_test/pkg/repository"
 	_ "github.com/go-sql-driver/mysql"
@@ -90,6 +91,8 @@ func main() {
 		// handler.OpenTestConnect()
 		// repository.dirByName()
 	case vvod == 0:
-		break
+		fmt.Println("Bye!")
+		os.Exit(0)
+		return
 	}
 }
