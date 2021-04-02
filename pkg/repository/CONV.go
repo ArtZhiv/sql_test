@@ -3,28 +3,12 @@ package repository
 import (
 	"database/sql"
 	"fmt"
+	"log"
 	"strconv"
-	"strings"
-	"time"
 )
 
-// enb2 ...
-type enb2 struct {
-	id         int
-	number     int
-	address    string
-	vendor     string
-	region     string
-	province   string
-	demolition string
-	mts        bool
-	life       bool
-	a1         bool
-	place      string
-}
-
-// Convert ...
-func Convert(a string) {
+// ConvertIMSIToGlobalID ...
+func ConvertIMSIToGlobalID(a string) {
 	// Перевод для номера eNodeB
 	c := a[5:10]
 	ii, _ := strconv.ParseInt(c, 16, 64)
@@ -46,31 +30,43 @@ func Convert(a string) {
 		panic(err)
 	}
 	defer rows.Close()
-	products := []enb2{}
+	products := []eNodeb{}
 
 	for rows.Next() {
-		p := enb2{}
-		err := rows.Scan(&p.id, &p.number, &p.address, &p.vendor, &p.region, &p.province, &p.demolition, &p.mts, &p.life, &p.a1, &p.place)
+		p := eNodeb{}
+		err := rows.Scan(
+			&p.id,
+			&p.number,
+			&p.dismantling,
+			&p.area,
+			&p.district,
+			&p.city,
+			&p.address,
+			&p.vendor,
+			&p.location,
+			&p.mts,
+			&p.life,
+			&p.a1,
+		)
 		if err != nil {
-			fmt.Println(err)
+			log.Fatal(err)
 			continue
 		}
 		products = append(products, p)
 	}
 	if len(products) == 0 {
-		dt := time.Now()
-		d := dt.Format("01.02.2006")
-		fmt.Println(mm, "не в коммерции на", d)
+		// dt := time.Now()
+		// d := dt.Format("01.02.2006")
+		// fmt.Println(mm, "не в коммерции на", d)
 	} else {
 		for _, p := range products {
-			if p.demolition != "NULL" {
-				len := len(p.demolition) - 4
-				fmt.Println("+ -------------- + ---------- +", strings.Repeat("-", len), "+")
-				fmt.Println("| ДЕМОНТИРОВАНА--|--", p.number, "--|--", p.demolition, "--|")
-				fmt.Println("+ -------------- + ---------- +", strings.Repeat("-", len), "+")
-				fmt.Println()
+			if p.dismantling != "NULL" {
 			} else {
-				fmt.Println("Коллеги, данный клиент подключен к", m, "сектору eNodeB", p.number, p.address)
+				fmt.Printf("Коллеги, данный клиент подключен к %v сектору eNodeB %v %v",
+					m,
+					p.number,
+					p.address,
+				)
 				fmt.Println()
 			}
 		}

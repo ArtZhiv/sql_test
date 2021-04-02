@@ -35,3 +35,44 @@ CREATE TABLE usersTable (
         Middlename   VARCHAR(50)  NOT NULL,
         PRIMARY KEY(id)
   );
+
+
+
+CREATE TABLE lte(
+  id    INTEGER PRIMARY KEY AUTOINCREMENT UNIQUE, 
+  Name  TEXT,
+  Start_time TIMESTAMP NOT NULL,
+  End_time TIMESTAMP,
+  Time TIMESTAMP,
+  Type TEXT,
+  Responsibility TEXT,
+  Service TEXT,
+  Note TEXT,
+  Alarm TEXT,
+  FIO TEXT
+);
+
+CREATE TABLE egts(
+  id    INTEGER PRIMARY KEY AUTOINCREMENT UNIQUE, 
+  Start_time TIMESTAMP,
+  End_time TIMESTAMP,
+  Time TIMESTAMP,
+  Type TEXT,
+  Responsibility TEXT,
+  Service TEXT,
+  Note TEXT,
+  FIO TEXT
+);
+
+CREATE TABLE ppd(
+  id    INTEGER PRIMARY KEY AUTOINCREMENT UNIQUE,
+  Name TEXT,
+  Start_time TIMESTAMP,
+  End_time TIMESTAMP,
+  Time TIMESTAMP,
+  Responsibility TEXT,
+  Note TEXT,
+  FIO TEXT
+);
+
+CREATE TABLE commercialUPD( id INT NOT NULL AUTO_INCREMENT, dateCreate TEXT NOT NULL, PRIMARY KEY(id) ) 

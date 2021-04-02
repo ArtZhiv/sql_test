@@ -3,6 +3,8 @@ package repository
 import (
 	"os"
 	"os/exec"
+
+	_ "github.com/go-sql-driver/mysql"
 )
 
 // ClearCMD ...
@@ -11,16 +13,3 @@ func ClearCMD() {
 	cmd.Stdout = os.Stdout
 	cmd.Run()
 }
-
-// StartProgramm ...
-func StartProgramm() {
-	cmd := exec.Command("powershell", "/c", "go run main.go")
-	cmd.Stdout = os.Stdout
-	cmd.Run()
-}
-
-/*
-	cmd := exec.Command("powershell", "/c", "echo", c)
-	cmd.Stdout = os.Stdout
-	cmd.Run()
-*/
