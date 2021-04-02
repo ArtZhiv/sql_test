@@ -13,8 +13,11 @@ import (
 	_ "github.com/go-sql-driver/mysql"
 )
 
+var (
+	y = color.New(color.FgYellow).Add(color.Underline)
+)
+
 func main() {
-	y := color.New(color.FgYellow).Add(color.Underline)
 	if repository.Compare() == false {
 		usr, err := user.Current()
 		if err != nil {
@@ -131,6 +134,12 @@ func Executor(s string) {
 	case "workFromMts":
 		var value string = setCommand[1]
 		repository.TextSearchMTS(value)
+	case "upd":
+		repository.UpdateTable()
+		y.Printf("Обновлена таблица eNodeB, добавлено %v записей\n",
+			repository.UpdateBaseStation(initDB(repository.ConnDB)))
+		y.Printf("Обновлена таблица с секторами, добавлено %v записей\n",
+			repository.UpdateSector(initDB(repository.ConnDB)))
 	case "clear":
 		repository.ClearCMD()
 
