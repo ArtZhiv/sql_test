@@ -3,7 +3,6 @@ package repository
 import (
 	"fmt"
 	"io/ioutil"
-	"log"
 	"strings"
 
 	"github.com/c-bata/go-prompt"
@@ -36,7 +35,8 @@ func GenYaml() []prompt.Suggest {
 	allSelect := make(map[string]string)
 	openFile, err := ioutil.ReadFile("../files/info.yaml")
 	if err != nil {
-		log.Fatalf("ERROR open YAML info: %v\n", err)
+		Error.Printf("ERROR")
+		fmt.Printf(" open YAML info: %v\n", err)
 	}
 	yaml.Unmarshal(openFile, &allSelect)
 	for key, value := range allSelect {
@@ -53,7 +53,8 @@ func GetHelp() {
 	allSelect := make(map[string]string)
 	openFile, err := ioutil.ReadFile("../files/help.yaml")
 	if err != nil {
-		log.Fatalf("ERROR open YAML info: %v\n", err)
+		Error.Printf("ERROR")
+		fmt.Printf(" open YAML help: %v\n", err)
 	}
 	yaml.Unmarshal(openFile, &allSelect)
 	for key, value := range allSelect {

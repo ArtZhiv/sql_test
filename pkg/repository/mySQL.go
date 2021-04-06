@@ -4,7 +4,6 @@ import (
 	"database/sql"
 	"fmt"
 	"io/ioutil"
-	"log"
 	"strconv"
 	"strings"
 
@@ -15,10 +14,12 @@ import (
 func initDB(identificatorDB string) (db *sql.DB) {
 	db, err := sql.Open("mysql", identificatorDB)
 	if err != nil {
-		log.Fatalf("ERROR connected DB %v\n", err)
+		Error.Printf("ERROR")
+		fmt.Printf(" connected DB %v\n", err)
 	}
 	if err = db.Ping(); err != nil {
-		log.Fatalf("ERROR DB Ping %v\n", err)
+		Error.Printf("ERROR")
+		fmt.Printf(" DB Ping %v\n", err)
 	}
 	return db
 }
@@ -35,7 +36,8 @@ func UpdateTable() {
 		newDate,
 	)
 	if err != nil {
-		log.Fatalf("ERROR inserted DB %v", err)
+		Error.Printf("ERROR")
+		fmt.Printf(" inserted DB commercialUPD %v", err)
 	}
 }
 
@@ -44,7 +46,8 @@ func truncate(db *sql.DB, dbName string) {
 	dbFull := fmt.Sprintf("TRUNCATE TABLE beCloud_database.%v", dbName)
 	_, err := db.Exec(dbFull)
 	if err != nil {
-		log.Fatalf("ERROR %v\n", err)
+		Error.Printf("ERROR")
+		fmt.Printf(" очистки таблицы %v\n", err)
 	} else {
 		fmt.Printf("Table %v is CLEARED!!!\n", dbName)
 	}
@@ -55,7 +58,8 @@ func counterRows(db *sql.DB, dbName string) string {
 	dbFull := fmt.Sprintf("SELECT count(*) FROM beCloud_database.%v", dbName)
 	rows, err := db.Query(dbFull)
 	if err != nil {
-		log.Fatalf("ERROR %v", err)
+		Error.Printf("ERROR")
+		fmt.Printf(" запроса количества записей %v", err)
 	}
 	var count string
 	counters := []counter{}
@@ -63,7 +67,8 @@ func counterRows(db *sql.DB, dbName string) string {
 		p := counter{}
 		err := rows.Scan(&p.count)
 		if err != nil {
-			log.Fatalf("ERROR %v", err)
+			Error.Printf("ERROR")
+			fmt.Printf(" декодинга переменной колличества записей %v", err)
 			continue
 		}
 		counters = append(counters, p)
@@ -80,7 +85,8 @@ func UpdateBaseStation(db *sql.DB) string {
 
 	f, err := excelize.OpenFile(PathCommercial + "Commercial BS.xlsm")
 	if err != nil {
-		log.Fatalf("ERROR %v\n", err)
+		Error.Printf("ERROR")
+		fmt.Printf(" открытия файла Excel %v\n", err)
 	}
 
 	// Get value from cell by given worksheet name and axis.
@@ -145,7 +151,8 @@ func UpdateBaseStation(db *sql.DB) string {
 				commercial_a1,
 			)
 			if err != nil {
-				log.Fatalf("ERROR %v\n", err)
+				Error.Printf("ERROR")
+				fmt.Printf(" запроса к БД enodeB %v\n", err)
 			}
 		} else {
 			number, _ := strconv.Atoi(number)
@@ -163,7 +170,8 @@ func UpdateBaseStation(db *sql.DB) string {
 				commercial_a1,
 			)
 			if err != nil {
-				log.Fatalf("ERROR %v\n", err)
+				Error.Printf("ERROR")
+				fmt.Printf(" запроса к БД enodeB %v\n", err)
 			}
 		}
 	}
@@ -176,7 +184,8 @@ func UpdateSector(db *sql.DB) string {
 
 	f, err := excelize.OpenFile(PathCommercial + "Commercial BS.xlsm")
 	if err != nil {
-		log.Fatalf("ERROR %v\n", err)
+		Error.Printf("ERROR")
+		fmt.Printf(" открытия файла Excel %v\n", err)
 	}
 
 	// Get value from cell by given worksheet name and axis.
@@ -241,7 +250,8 @@ func UpdateSector(db *sql.DB) string {
 			beCloud,
 		)
 		if err != nil {
-			log.Fatalf("ERROR %v\n", err)
+			Error.Printf("ERROR")
+			fmt.Printf(" запроса к БД Sector %v\n", err)
 		}
 	}
 	return counterRows(db, "sector")
@@ -252,7 +262,8 @@ func listDirByReadDir(path string) string {
 
 	lst, err := ioutil.ReadDir(path)
 	if err != nil {
-		log.Fatalf("ERROR read DIR %v\n", err)
+		Error.Printf("ERROR")
+		fmt.Printf("ERROR read DIR %v\n", err)
 	}
 	for _, val := range lst {
 		if strings.Contains(val.Name(), "Commercial BS.xlsm") {
@@ -265,17 +276,12 @@ func listDirByReadDir(path string) string {
 func listCommercialDateUPD(identificatorDB string) string {
 	var dateDB string
 
-	db, err := sql.Open("mysql", identificatorDB)
-	if err != nil {
-		log.Fatalf("ERROR connected DB %v\n", err)
-	}
-	if err = db.Ping(); err != nil {
-		log.Fatalf("ERROR DB Ping %v\n", err)
-	}
+	db := initDB(ConnDB)
 
 	rows, err := db.Query("select * from beCloud_database.commercialUPD")
 	if err != nil {
-		panic(err)
+		Error.Printf("ERROR")
+		fmt.Printf(" запроса к БД commercialUPD %v\n", err)
 	}
 	defer rows.Close()
 
@@ -285,7 +291,8 @@ func listCommercialDateUPD(identificatorDB string) string {
 		p := commercialUPD{}
 		err := rows.Scan(&p.id, &p.dateCreate)
 		if err != nil {
-			log.Fatalf("ERROR %v\n", err)
+			Error.Printf("ERROR")
+			fmt.Printf(" декодировани даты обновления %v\n", err)
 			continue
 		}
 		upd = append(upd, p)

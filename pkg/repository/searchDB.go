@@ -41,7 +41,7 @@ func Search(nummmm string) {
 		nummmm,
 	)
 	if err != nil {
-		panic(err)
+		Error.Printf("ERROR")
 	}
 	defer rows.Close()
 	products := []eNodeb{}
@@ -63,6 +63,7 @@ func Search(nummmm string) {
 			&p.a1,
 		)
 		if err != nil {
+			Error.Printf("ERROR")
 			fmt.Println(err)
 			continue
 		}
@@ -130,7 +131,7 @@ func Search(nummmm string) {
 
 				rows, err := db.Query("select * from beCloud_database.sector where basestantion = ?", p.number)
 				if err != nil {
-					panic(err)
+					Error.Printf("ERROR")
 				}
 				defer rows.Close()
 				slector := []sectors{}
@@ -147,6 +148,7 @@ func Search(nummmm string) {
 						&l.beCloud,
 					)
 					if err != nil {
+						Error.Printf("ERROR")
 						fmt.Println(err)
 						continue
 					}
@@ -214,7 +216,7 @@ func Search(nummmm string) {
 func OpenFileMTS() {
 	fileCreate, err := os.Create(pathMTS)
 	if err != nil {
-		panic(err)
+		Error.Printf("ERROR")
 	} else {
 		fileCreate.Close()
 	}
@@ -237,13 +239,14 @@ func TextSearchMTS(abort string) {
 	defer os.Remove(pathMTS)
 	lst, err := ioutil.ReadDir("../files")
 	if err != nil {
+		Error.Printf("ERROR")
 		log.Fatalf("ERROR read DIR %v\n", err)
 	}
 	for _, val := range lst {
 		if strings.Contains(val.Name(), "workMts.txt") {
 			file, err := os.Open(pathMTS)
 			if err != nil {
-				panic(err)
+				Error.Printf("ERROR")
 			}
 
 			data := make([]byte, 1024)
@@ -251,6 +254,7 @@ func TextSearchMTS(abort string) {
 			for {
 				n, err = file.Read(data)
 				if err == io.EOF {
+					Error.Printf("ERROR")
 					break
 				}
 				vvv := string(data[:n])

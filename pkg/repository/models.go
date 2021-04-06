@@ -1,8 +1,14 @@
 package repository
 
+import "github.com/gookit/color"
+
 const (
 	PathCommercial = "//192.168.37.222/24x7/Макросы и шаблоны/Комерция для шаблонов и макросов/"
 	ConnDB         = "beclouderp:becloud$erp@tcp(192.168.37.65:3306)/beCloud_database?parseTime=true"
+)
+
+var (
+	Error = color.New(color.FgDarkGray, color.BgRed)
 )
 
 type eNodeb struct {

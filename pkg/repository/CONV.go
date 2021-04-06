@@ -3,7 +3,6 @@ package repository
 import (
 	"database/sql"
 	"fmt"
-	"log"
 	"strconv"
 )
 
@@ -21,13 +20,15 @@ func ConvertIMSIToGlobalID(a string) {
 
 	db, err := sql.Open("mysql", "beclouderp:becloud$erp@tcp(192.168.37.65:3306)/beCloud_database")
 	if err != nil {
-		panic(err)
+		Error.Printf("ERROR")
+		fmt.Printf(" ошибка открытия БД %v\n", err)
 	}
 	defer db.Close()
 
 	rows, err := db.Query("SELECT * FROM beCloud_database.eNodeB WHERE number LIKE concat('%',?,'%')", mm)
 	if err != nil {
-		panic(err)
+		Error.Printf("ERROR")
+		fmt.Printf(" ошибка запроса для Unet %v\n", err)
 	}
 	defer rows.Close()
 	products := []eNodeb{}
@@ -49,25 +50,22 @@ func ConvertIMSIToGlobalID(a string) {
 			&p.a1,
 		)
 		if err != nil {
-			log.Fatal(err)
+			Error.Printf("ERROR")
+			fmt.Printf(" что-то с обработкой Excel %v\n", err)
 			continue
 		}
 		products = append(products, p)
 	}
 	if len(products) == 0 {
-		// dt := time.Now()
-		// d := dt.Format("01.02.2006")
-		// fmt.Println(mm, "не в коммерции на", d)
 	} else {
 		for _, p := range products {
 			if p.dismantling != "NULL" {
 			} else {
-				fmt.Printf("Коллеги, данный клиент подключен к %v сектору eNodeB %v %v",
+				fmt.Printf("Коллеги, данный клиент подключен к %v сектору eNodeB %v %v\n",
 					m,
 					p.number,
 					p.address,
 				)
-				fmt.Println()
 			}
 		}
 	}
